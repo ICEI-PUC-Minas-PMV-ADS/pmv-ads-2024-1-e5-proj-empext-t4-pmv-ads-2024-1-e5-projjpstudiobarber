@@ -1,36 +1,37 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Segundo a ABIHPEC, o Brasil é o quarto maior mercado global de beleza, perdendo apenas para a China, Estados Unidos e Japão. Em média, os brasileiros dedicam cerca de 2% do seu orçamento mensal a produtos de beleza, higiene e procedimentos estéticos. O mercado de beleza no país é consolidado e rentável.
+
+O agendamento online surge como uma estratégia eficaz para otimizar a gestão de agendas em salões de beleza e barbearias. Além de ser acessível e prático, possibilita economia de tempo e recursos financeiros, atraindo novos clientes que valorizam a praticidade na marcação de horários.
+
+Ao permitir que os clientes agendem serviços 24/7 por meio de um aplicação WEB personalizada, a empresa mantém uma comunicação constante e reduz congestionamentos telefônicos e espera por confirmações de agendamento, bem como disponibilidade de horários. A coleta de dados valiosos facilita a personalização de promoções e o envio de novidades direcionadas via alertas e e-mail. Com o agendamento online, a marca se fortalece de forma inconsciente, marcando presença no ambiente Digital.
+
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+A barbearia enfrenta dificuldades com a gestão manual de agendamentos, resultando em erros, conflitos de horários e pausa nos atendimentos para o agendamento de clientes, que consequentemente afeta a produtividade. A equipe reduzida de funcionários torna o processo ainda mais desafiador, exigindo uma solução automatizada.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+### Objetivo Geral
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver uma aplicação de agendamentos para a barbearia, visando melhorar a eficiência operacional e a experiência do cliente.
+
+### Objetivos Especificos
+ - Implementar um sistema de agendamento online intuitivo para os clientes.
+
+ - Integrar uma interface de gerenciamento para os funcionários, facilitando o acompanhamento e a organização dos agendamentos.
+
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A implementação da aplicação de agendamentos é essencial para modernizar os processos da barbearia, garantindo um serviço mais eficiente e uma experiência aprimorada para o cliente. A cidade em que a barbearia está localizada, Nova Lima, MG, é um mercado em expansão, onde há muitos concorrentes na área. Portanto, a adoção de tecnologias é fundamental para manter a competitividade. 
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+O projeto fornecerá visões valiosas sobre as necessidades específicas de pequenas empresas de serviços, auxiliando na entrega de uma solução personalizada e eficaz.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Relação com a Extensão Universitária
 
