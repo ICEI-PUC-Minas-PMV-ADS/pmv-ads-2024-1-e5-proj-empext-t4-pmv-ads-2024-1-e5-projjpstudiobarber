@@ -9,7 +9,7 @@
 
 `SEMESTRE: Eixo 5`
 
-O projeto envolve o desenvolvimento de un sistema de agendamentos on-line para a empresa JP Barber localizada en Nova Lima - MG, onde o profissional Jonatas realiza os atendimentos de serviços de barbearia em geral. Isso promoverá a otimização no fluxo de agendamento, na organização da agenda e na centralização de informações do estabelecimentos. Alem ainda de possibilitar o maior engajamento junto aos seus clientes e permitir um ambiente de acompanhamento dos agendamentos tanto para o Jonatas, quanto para os clientes.
+O projeto envolve o desenvolvimento de um sistema de agendamentos on-line para a empresa JP Barber localizada en Nova Lima - MG, onde o profissional Jonatas realiza os atendimentos de serviços de barbearia em geral, para sua cartela de clientes já consolidada. Isso promoverá a otimização no fluxo de agendamento, na organização da agenda e na centralização de informações do estabelecimentos. Alem ainda de possibilitar o maior engajamento junto aos seus clientes e permitir um ambiente de acompanhamento dos agendamentos tanto para o Jonatas, quanto para os clientes.
 
 ## Integrantes
 
