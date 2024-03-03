@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# JP STUDIO BARBER
 
-`CURSO`
+`CURSO: Análise e Desenvolvimento de Sistema - EAD`
 
-`DISCIPLINA`
+`DISCIPLINA: Projeto: Desenvolvimento de um Sistema Sociotécnico Inovador`
 
-`SEMESTRE`
+`SEMESTRE: Eixo 5`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* André Felipe Gomes Pinto
+* Armando Xavier de Amorim
+* Daniel de Souza Marcolino
+* Gabriel Costa de Cerqueira Bispo
+* Maykon Edésio Rosa
+* Roger Bastos Mendes
 
 ## Orientador
 
-* Nome completo do professor 1
+* João Carlos Oliveira Caetano
 
 ## Instruções de utilização
 
