@@ -1,12 +1,15 @@
 # JP STUDIO BARBER
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/blob/b5fe9a30a5808384f4b19e0463969f82aebfdc29/documentos/img/logo1.jpeg" width="300">
+
+
 `CURSO: Análise e Desenvolvimento de Sistema - EAD`
 
 `DISCIPLINA: Projeto: Desenvolvimento de um Sistema Sociotécnico Inovador`
 
 `SEMESTRE: Eixo 5`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto envolve o desenvolvimento de un sistema de agendamentos on-line para a empresa JP Barber localizada en Nova Lima - MG, onde o profissional Jonatas realiza os atendimentos de serviços de barbearia em geral. Isso promoverá a otimização no fluxo de agendamento, na organização da agenda e na centralização de informações do estabelecimentos. Alem ainda de possibilitar o maior engajamento junto aos seus clientes e permitir um ambiente de acompanhamento dos agendamentos tanto para o Jonatas, quanto para os clientes.
 
 ## Integrantes
 
