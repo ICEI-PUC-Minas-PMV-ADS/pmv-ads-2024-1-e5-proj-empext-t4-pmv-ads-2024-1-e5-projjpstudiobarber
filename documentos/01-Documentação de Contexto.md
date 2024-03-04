@@ -35,7 +35,7 @@ O projeto fornecerá visões valiosas sobre as necessidades específicas de pequ
 
 ## Relação com a Extensão Universitária
 
-Relacionar a situação-problema da organização com o impacto social esperado com a implantação do sistema sociotécnico.
+O projeto fornecerá visões valiosas sobre as necessidades específicas de pequenas empresas de serviços, auxiliando na entrega de uma solução personalizada e eficaz. A implantação deste sistema sociotécnico no JP Studio Barber terá um impacto social significativo. Ele não apenas melhorará a eficiência das operações da barbearia, mas também contribuirá para a satisfação das clientes, promovendo um ambiente mais amigável e organizado. Através deste projeto, os alunos têm a oportunidade de contribuir com a sociedade, proporcionando uma solução que combina teoria e prática, beneficiando tanto o parceiro quanto a formação acadêmica dos estudantes.
 
 ## Descrição do Parceiro
 
