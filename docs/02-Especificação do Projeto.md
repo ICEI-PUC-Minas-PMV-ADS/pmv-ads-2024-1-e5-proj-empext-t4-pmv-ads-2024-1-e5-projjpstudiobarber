@@ -8,6 +8,17 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Arquitetura e Tecnologias
 
+O projeto será desenvolvido utilizando as seguintes tecnologias:
+
+- Front-End: A interface do usuario será desenvolvida utilizando (HTML, CSS e React.......)
+- Back-End: Todo o aparato de back-end será desenvolvido em (React, C#, MySQL.......)
+
+As tecnologias escolhidas foram as mais adequadas para atender os requisitos do projeto, que são:
+
+- Facilidade de uso: Descrever....
+- Acessibilidade: Descrever....
+- Eficiencia: Descrever....
+
 o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a serem utilizadas. Sugere-se a criação de um diagrama de componentes da solução.
 
 ## Project Model Canvas
@@ -25,30 +36,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-000| A aplicação deverá apresentar o endereço, telefone e e-mail de contato da barbearia.| MÉDIA | 
+|RF-000| A aplicação deve abrir um menu durante o agendamento para selecionar o (os) horário(s) e os serviço (os) disponíveis. | ALTA |
+|RF-000| A aplicação deve permitir a avaliação do serviço. | MÉDIA |
+|RF-000| A aplicação deve permitir que o cliente faça mais de um agendamento. | MÉDIA |
+|RF-000| A aplicação deve ter uma funcionalidade de login para seus usuários (Dono de barbearia e clientes) | ALTA |
+|RF-000| A aplicação deve permitir que o cliente faça o cancelamento antecipado ou alteração do serviço agendado. | ALTA |
+|RF-000| A aplicação deve permitir que o dono da barbearia faça o cancelamento a qualquer momento ou alteração do serviço agendado. | ALTA |
+|RF-000| A aplicação deverá permitir o agendamento em um intervalo minimo de 1 hora para o publico externo| ALTA |
+|RF-000| A aplicação deverá permitir a manutenção dos horários disponiveis para atendimento| ALTA |
+|RF-000| A aplicação deverá permitir o agendamento sem intervalo minimo apenas ao dono do estabelecimento (Venda Balcão)| ALTA |
+|RF-000| A aplicação deverá apresentar tela com o histórico do cliente | ALTA |
+|RF-000| A aplicação deverá permitir o envio de e-mails e alertas| MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-000| O sistema deverá funcionar nos principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).| ALTA | 
+|RNF-000| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada. |  BAIXA | 
+|RNF-000| O site deverá ter bom nível de contraste entre os elementos da tela em conformidade com a identidade visual da marca.|  MÉDIA | 
+|RNF-000| O site deve ser publicado em um ambiente acessível publicamente na Internet.|  BAIXA |
+|RNF-000| O sistema deve estar de acordo com a Lei Geral de Proteção de Dados (LGPD).|  ALTA |
+|RNF-000| O sistema deve ser implementado em uma linguagem para aplicação Web.|  BAIXA |
+|RNF-000| O sistema deve estar disponível pelo menos 99% das 24 horas do dia, nos 07 dias da semana.|  ALTA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -56,14 +68,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-00| O projeto deverá ser entregue até o final do semestre |
+|RE-00| A equipe não pode subcontratar o desenvolvimento do trabalho.       |
+|RE-00| O aplicativo deve se restringir às tecnologias propostas pelo curso.|
+|RE-00| A aplicação deve se restringir às tecnologias básicas da Web de FrontEnd e Backend|
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
