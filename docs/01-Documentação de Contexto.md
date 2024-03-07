@@ -39,4 +39,12 @@ O projeto fornecerá visões valiosas sobre as necessidades específicas de pequ
 
 ## Descrição do Parceiro
 
-Apresente uma descrição resumida sobre a organização onde o projeto será desenvolvido para que possa ser compreendido o cenário sistema sociotécnico.
+Jonatas Felipe Nunes Soares iniciou sua jornada profissional há oito anos ao frequentar um curso na renomada Escola de Barbearia Branca de Neve. Após concluir o curso, iniciou seu trabalho realizando atendimentos domiciliares. Sua habilidade e dedicação logo chamaram a atenção, levando-o a ser convidado para integrar a equipe de uma barbearia no centro de Nova Lima, MG. 
+
+Após dois anos de sucesso nessa barbearia, Jonatas recebeu uma oferta para trabalhar em um estabelecimento de alto padrão em Belo Horizonte, a Trato de Barbados. Lá, dedicou-se a aprimorar suas habilidades participando de diversos cursos oferecidos internamente, focados em atendimento ao cliente, gestão de equipe e técnicas de vendas. 
+
+No entanto, com a eclosão da pandemia de Covid-19, viu-se impossibilitado de continuar trabalhando em seu emprego anterior. Diante desse desafio, vislumbrou a oportunidade de empreender e decidiu abrir seu próprio negócio. Optou por uma abordagem inovadora, inaugurando uma barbearia na varanda de sua casa. Com um serviço de excelência e preços justos, conquistou uma clientela fiel. 
+
+Assim nasceu a JP Studio Barber, uma barbearia que vai além do convencional, oferecendo também serviços de estética. Com um ambiente moderno e aconchegante distribuído em dois andares, o primeiro abriga a recepção e a área de barbearia, enquanto o segundo é destinado à clínica de estética. Essa iniciativa reflete o compromisso de Jonatas em proporcionar experiências únicas e completas aos seus clientes, consolidando-se como um empreendedor de sucesso no ramo da beleza e cuidados pessoais.
+
+## Referencias Bibliográficas
