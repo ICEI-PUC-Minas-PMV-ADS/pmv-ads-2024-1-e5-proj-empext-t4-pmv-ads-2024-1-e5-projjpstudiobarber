@@ -10,14 +10,14 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 O projeto será desenvolvido utilizando as seguintes tecnologias:
 
-- Front-End: A interface do usuario será desenvolvida utilizando (HTML, CSS e React.......)
-- Back-End: Todo o aparato de back-end será desenvolvido em (React, C#, MySQL.......)
+- Front-End: A interface do usuario será desenvolvida utilizando CSS, ReactJS
+- Back-End: Todo o aparato de back-end será desenvolvido em React Native
 
 As tecnologias escolhidas foram as mais adequadas para atender os requisitos do projeto, que são:
 
-- Facilidade de uso: Descrever....
-- Acessibilidade: Descrever....
-- Eficiencia: Descrever....
+- Facilidade de uso: Dos clientes atuais e futuros do negócio
+- Acessibilidade: Maior base instalada de usuários
+- Eficiencia: Publicação em loja de aplicativos, podendo efetuar um agendamento a qualquer momento.
 
 o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a serem utilizadas. Sugere-se a criação de um diagrama de componentes da solução.
 
@@ -30,36 +30,35 @@ Colocar a imagem do modelo construído apresentando a proposta de solução.
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Foi utilizado a técnica de priorização da Matriz MoSCOW.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-000| A aplicação deverá apresentar o endereço, telefone e e-mail de contato da barbearia.| MÉDIA | 
-|RF-000| A aplicação deve abrir um menu durante o agendamento para selecionar o (os) horário(s) e os serviço (os) disponíveis. | ALTA |
-|RF-000| A aplicação deve permitir a avaliação do serviço. | MÉDIA |
-|RF-000| A aplicação deve permitir que o cliente faça mais de um agendamento. | MÉDIA |
-|RF-000| A aplicação deve ter uma funcionalidade de login para seus usuários (Dono de barbearia e clientes) | ALTA |
-|RF-000| A aplicação deve permitir que o cliente faça o cancelamento antecipado ou alteração do serviço agendado. | ALTA |
-|RF-000| A aplicação deve permitir que o dono da barbearia faça o cancelamento a qualquer momento ou alteração do serviço agendado. | ALTA |
-|RF-000| A aplicação deverá permitir o agendamento em um intervalo minimo de 1 hora para o publico externo| ALTA |
-|RF-000| A aplicação deverá permitir a manutenção dos horários disponiveis para atendimento| ALTA |
-|RF-000| A aplicação deverá permitir o agendamento sem intervalo minimo apenas ao dono do estabelecimento (Venda Balcão)| ALTA |
-|RF-000| A aplicação deverá apresentar tela com o histórico do cliente | ALTA |
-|RF-000| A aplicação deverá permitir o envio de e-mails e alertas| MÉDIA |
+|RF-001| A aplicação deverá permitir o cadastro de usuários (Cliente e Admin).| ALTA | 
+|RF-002| A aplicação deve ter opção de login para seus usuários, mediante a senha, com acessos diferenciados entre Cliente e Admin. | ALTA |
+|RF-003| A aplicação deve exibir um botão "Agendamento" na <i>landing page</i> para acesso da função de seleção de data, horários e serviços disponíveis. | ALTA |
+|RF-004| A aplicação deverá permitir que o Admin faça o cancelamento, edição ou alteração dos agendamentos. | ALTA |
+|RF-005| A aplicação deve permitir que o Cliente faça mais de um agendamento ou agendamento recorrente. | MÉDIA |
+|RF-006| A aplicação deve permitir que o Cliente faça o cancelamento ou alteração do serviço agendado. | ALTA |
+|RF-007| A aplicação deve permitir a avaliação dos serviços realizados pelo Cliente. | MÉDIA |
+|RF-008| A aplicação deverá permitir o agendamento de serviços para o Cliente, somente com uma antecedência minima de 1 hora. | MÉDIA |
+|RF-009| A aplicação deverá enviar um alerta de confirmação do serviço agendado. | BAIXA |
+|RF-010| A aplicação deverá emitir um relatório por período com o valor total dos serviços executados. | BAIXA |
+
+<img src="./img/MoSCoW Method.jpg">
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-000| O sistema deverá funcionar nos principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).| ALTA | 
-|RNF-000| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada. |  BAIXA | 
-|RNF-000| O site deverá ter bom nível de contraste entre os elementos da tela em conformidade com a identidade visual da marca.|  MÉDIA | 
-|RNF-000| O site deve ser publicado em um ambiente acessível publicamente na Internet.|  BAIXA |
-|RNF-000| O sistema deve estar de acordo com a Lei Geral de Proteção de Dados (LGPD).|  ALTA |
-|RNF-000| O sistema deve ser implementado em uma linguagem para aplicação Web.|  BAIXA |
-|RNF-000| O sistema deve estar disponível pelo menos 99% das 24 horas do dia, nos 07 dias da semana.|  ALTA |
+|RNF-000| A aplicação deverá ser responsiva permitindo a visualização em um smartphone de forma adequada. |  ALTA | 
+|RNF-000| A aplicação deve ser publicada em loja de aplicativos para smartphones.|  ALTA |
+|RNF-000| A aplicação deve estar de acordo com a Lei Geral de Proteção de Dados (LGPD).|  ALTA |
+|RNF-000| A aplicação deverá ter bom nível de contraste entre os elementos da tela em conformidade com a identidade visual da marca.|  MÉDIA |
+|RNF-000| A aplicação deverá ter índice de diposnibildiade superior a 99%.|  MÉDIA |
 
 
 ## Restrições
@@ -68,10 +67,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-00| O projeto deverá ser entregue até o final do semestre |
-|RE-00| A equipe não pode subcontratar o desenvolvimento do trabalho.       |
-|RE-00| O aplicativo deve se restringir às tecnologias propostas pelo curso.|
-|RE-00| A aplicação deve se restringir às tecnologias básicas da Web de FrontEnd e Backend|
+|RE-001| O projeto deverá ser entregue até o dia 10-JUN-24. |
+|RE-002| A equipe não poderá subcontratar o desenvolvimento do trabalho.       |
+|RE-003| A aplicação terá como foco dispositivos com sistema operacional Android.|
 
 
 
