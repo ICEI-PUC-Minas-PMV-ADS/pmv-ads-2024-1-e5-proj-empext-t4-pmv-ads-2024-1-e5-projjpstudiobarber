@@ -3,4 +3,12 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Visão geral da interação do usuário com as funcionalidades que fazem parte do sistema sociotécnico (protótipo de telas).
+## Palheta de cores
+
+<img src="./img/palheta.png">
+
+## Wireframes
+
+<img src="./img/wireframe1.png">
+
+<img src="./img/wireframe2.png">
