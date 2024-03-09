@@ -2,9 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Definição do problema e ideia de solução a partir da perspectiva do cliente. Os pontos mais relevantes observados durante as discussões foram então consolidados a seguir.
 
 ## Arquitetura e Tecnologias
 
@@ -19,22 +17,19 @@ As tecnologias escolhidas foram as mais adequadas para atender os requisitos do 
 - Acessibilidade: Maior base instalada de usuários
 - Eficiencia: Publicação em loja de aplicativos, podendo efetuar um agendamento a qualquer momento.
 
-o	Descreva brevemente a arquitetura definida para o projeto e as tecnologias a serem utilizadas. Sugere-se a criação de um diagrama de componentes da solução.
-
 ## Project Model Canvas
 
 
 
-<img width="1102" alt="image" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/blob/489a202bc1b36888a8bee1931df66c7d1ce45df2/docs/img/project%20model%20canvas.png">
+<img width="1102" alt="image" src="./img/project model canvas.png">
 
-
-> **Links Úteis**:
-> Disponíveis em material de apoio do projeto
 
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 Foi utilizado a técnica de priorização da Matriz MoSCOW.
+
+<img src="./img/MoSCoW Method.jpg">
 
 ### Requisitos Funcionais
 
@@ -51,7 +46,6 @@ Foi utilizado a técnica de priorização da Matriz MoSCOW.
 |RF-009| A aplicação deverá enviar um alerta de confirmação do serviço agendado. | BAIXA |
 |RF-010| A aplicação deverá emitir um relatório por período com o valor total dos serviços executados. | BAIXA |
 
-<img src="./img/MoSCoW Method.jpg">
 
 ### Requisitos não Funcionais
 
@@ -78,26 +72,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+O diagrama de casos de uso é o próximo passo após a elicitação de requisitos.
 
 ## Modelo ER (Projeto Conceitual)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
-
-Sugestão de ferramentas para geração deste artefato: LucidChart e Draw.io.
-
-A referência abaixo irá auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 
 ## Projeto da Base de Dados
 
