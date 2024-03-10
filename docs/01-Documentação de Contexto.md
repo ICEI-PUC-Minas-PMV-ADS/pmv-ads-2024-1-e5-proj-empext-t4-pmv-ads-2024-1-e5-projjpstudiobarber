@@ -48,3 +48,9 @@ No entanto, com a eclosão da pandemia de Covid-19, viu-se impossibilitado de co
 Assim nasceu a JP Studio Barber, uma barbearia que vai além do convencional, oferecendo também serviços de estética. Com um ambiente moderno e aconchegante distribuído em dois andares, o primeiro abriga a recepção e a área de barbearia, enquanto o segundo é destinado à clínica de estética. Essa iniciativa reflete o compromisso de Jonatas em proporcionar experiências únicas e completas aos seus clientes, consolidando-se como um empreendedor de sucesso no ramo da beleza e cuidados pessoais.
 
 ## Referencias Bibliográficas
+
+Brasil é o quarto maior mercado de beleza e cuidados pessoais do mundo. Disponível em: <https://abihpec.org.br/brasil-e-o-quarto-maior-mercado-de-beleza-e-cuidados-pessoais-do-mundo/>. Acesso em: 09 de mar. 2024.
+
+‌ARNONI, H. Brasil é o quarto maior mercado de beleza e cuidados pessoais do mundo. Disponível em: <https://forbes.com.br/principal/2020/07/brasil-e-o-quarto-maior-mercado-de-beleza-e-cuidados-pessoais-do-mundo/>. Acesso em: 09 de mar. 2024.
+
+‌
