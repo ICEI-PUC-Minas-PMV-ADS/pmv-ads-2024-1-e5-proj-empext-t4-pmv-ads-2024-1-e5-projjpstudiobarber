@@ -1,6 +1,6 @@
 # JP STUDIO BARBER
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/blob/b5fe9a30a5808384f4b19e0463969f82aebfdc29/documentos/img/logo1.jpeg" width="300">
+<img src="./docs/img/logo1.jpeg" width="300">
 
 
 `CURSO: Análise e Desenvolvimento de Sistema - EAD`
@@ -26,7 +26,7 @@ O projeto envolve o desenvolvimento de um sistema de agendamentos on-line para a
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Assim que a primeira versão do sistema estiver disponível, será atualizado as instruções de utilização. 
 
 # Documentação
 
