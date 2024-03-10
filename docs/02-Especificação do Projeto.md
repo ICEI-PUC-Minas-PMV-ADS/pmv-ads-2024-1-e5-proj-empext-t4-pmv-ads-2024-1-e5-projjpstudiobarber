@@ -51,11 +51,12 @@ Foi utilizado a técnica de priorização da Matriz MoSCOW.
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-000| A aplicação deverá ser responsiva permitindo a visualização em um smartphone de forma adequada. |  ALTA | 
-|RNF-000| A aplicação deve ser publicada em loja de aplicativos para smartphones.|  ALTA |
-|RNF-000| A aplicação deve estar de acordo com a Lei Geral de Proteção de Dados (LGPD).|  ALTA |
-|RNF-000| A aplicação deverá ter bom nível de contraste entre os elementos da tela em conformidade com a identidade visual da marca.|  MÉDIA |
-|RNF-000| A aplicação deverá ter índice de diposnibildiade superior a 99%.|  MÉDIA |
+|RNF-001| A aplicação deverá ser responsiva permitindo a visualização em um smartphone de forma adequada. |  ALTA | 
+|RNF-002| A aplicação deve ser publicada em loja de aplicativos Google Play Store.|  ALTA |
+|RNF-003| A aplicação deve estar de acordo com a Lei Geral de Proteção de Dados (LGPD).|  ALTA |
+|RNF-004| A aplicação deverá fazer a encriptação de senha dos usuários.|  ALTA |
+|RNF-005| A aplicação deverá ter índice de disponibilidade superior a 99%.|  MÉDIA |
+|RNF-006| A aplicação deverá possuir backup de segurança automático em nuvem. |  MÉDIA |
 
 
 ## Restrições
@@ -64,7 +65,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|RE-001| O projeto deverá ser entregue até o dia 10-JUN-24. |
+|RE-001| O projeto deverá ser entregue até o dia 23-JUN-24. |
 |RE-002| A equipe não poderá subcontratar o desenvolvimento do trabalho.       |
 |RE-003| A aplicação terá como foco dispositivos com sistema operacional Android.|
 
@@ -82,4 +83,6 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Projeto da Base de Dados
 
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
+O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER.
+
+<img src="./img/basededados.jpg">
