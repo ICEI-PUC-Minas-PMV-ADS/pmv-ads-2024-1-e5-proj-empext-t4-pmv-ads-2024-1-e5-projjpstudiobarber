@@ -78,6 +78,7 @@ O diagrama de casos de uso é o próximo passo após a elicitação de requisito
 ## Modelo ER (Projeto Conceitual)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
+![alt text](<img/Jp BPMN Diagram (1).png>)
 
 ## Projeto da Base de Dados
 
