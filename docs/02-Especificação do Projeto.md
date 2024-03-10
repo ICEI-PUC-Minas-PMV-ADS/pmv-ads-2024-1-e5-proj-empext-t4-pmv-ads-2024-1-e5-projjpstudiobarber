@@ -73,7 +73,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos.
-![alt text](<img/JP Studio diagrama caso de uso.pdf>)
+[text](<img/JP Studio diagrama caso de uso.pdf>)
 
 ## Modelo ER (Projeto Conceitual)
 
