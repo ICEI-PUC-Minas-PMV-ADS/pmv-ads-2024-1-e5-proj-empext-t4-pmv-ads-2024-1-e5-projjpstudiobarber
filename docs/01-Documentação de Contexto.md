@@ -54,3 +54,6 @@ Brasil é o quarto maior mercado de beleza e cuidados pessoais do mundo. Dispon�
 ‌ARNONI, H. Brasil é o quarto maior mercado de beleza e cuidados pessoais do mundo. Disponível em: <https://forbes.com.br/principal/2020/07/brasil-e-o-quarto-maior-mercado-de-beleza-e-cuidados-pessoais-do-mundo/>. Acesso em: 09 de mar. 2024.
 
 ‌
+A industria de Higiene Pessoal, Perfumaria e Cosméticos - Essencial para o Brasil (Panorama do Setor 2024). Disponível em: <https://abihpec.org.br/site2019/wp-content/uploads/2024/02/Panorama-do-Setor_Atualizado_19.02.24.pdf> Acesso em: 07 de mar. 2024.
+
+Cosméticos para a barba beneficiam da mudança do comprotamento dos brasileiros. Disponível em: <https://www.brazilbeautynews.com/cosmeticos-para-a-barba-beneficiam-da-mudanca-do,1638> Acesso em 06 de mar. 2024.
