@@ -17,4 +17,4 @@
 
 <img src="./img/load.png" width="300px"/> <img src="./img/login.png" width="300px"/> <img src="./img/signin.png" width="300px"/> 
 <img src="./img/paginainicial.png" width="300px"/> <img src="./img/agendamento.png" width="300px"/> <img src="./img/perfil.png" width="300px"/> 
-<img src="./img/admperfil.png" width="300px"/> <img src="./img/servicos.png" width="300px"/> <img src="./img/agenda.png" width="300px"/> 
+<img src="./img/admperfil.png" width="300px"/> <img src="./img/servicos.png" width="300px"/> <img src="./img/admagenda.png" width="300px"/> 
