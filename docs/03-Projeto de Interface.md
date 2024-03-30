@@ -15,4 +15,4 @@
 
 ## Protótipo
 
-<img src="./img/load.png" width="700px"/>
+<img src="./img/load.png" width="300px"/>
