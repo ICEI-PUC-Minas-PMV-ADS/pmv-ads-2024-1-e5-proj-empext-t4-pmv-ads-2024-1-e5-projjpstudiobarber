@@ -12,3 +12,7 @@
 <img src="./img/wireframe1.png">
 
 <img src="./img/wireframe2.png">
+
+## Protótipo
+
+<img src="./img/load.png">
