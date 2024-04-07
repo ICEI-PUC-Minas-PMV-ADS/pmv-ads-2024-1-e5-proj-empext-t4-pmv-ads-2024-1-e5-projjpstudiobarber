@@ -6,7 +6,7 @@ export default () => {
     return (
         <Container>
             <Text>
-                APPOINTMENTS
+                APPOINTMENTS TESTE
             </Text>
         </Container>
     );
