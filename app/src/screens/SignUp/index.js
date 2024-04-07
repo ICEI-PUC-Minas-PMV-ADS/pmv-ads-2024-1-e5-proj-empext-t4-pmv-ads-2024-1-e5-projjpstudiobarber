@@ -23,6 +23,7 @@ import EmailIcon from '../../logos/email.svg';
 import LockIcon from '../../logos/lock.svg';
 import PersonIcon from '../../logos/person.svg';
 
+
 export default () => {
 
     const { dispatch: userDispatch } = useContext(UserContext);
@@ -68,7 +69,9 @@ export default () => {
     }
 
     return (
+        
         <Container>
+            
             <Barber width="100%" height="160" />
 
             <InputArea>
@@ -95,14 +98,14 @@ export default () => {
                 />
 
                 <CustomButton onPress={handleSignClick}>
-                    <CustomButtonText>CADASTRAR</CustomButtonText>                    
+                    <CustomButtonText>CRIAR CONTA</CustomButtonText>                    
                 </CustomButton>
 
             </InputArea>
 
             <SignMessageButton onPress={handleMessageButtonClick}>
                 <SignMessageButtonText>Já possui uma conta?</SignMessageButtonText>
-                <SignMessageButtonTextBold>Faça Login</SignMessageButtonTextBold>
+                <SignMessageButtonTextBold>Entrar</SignMessageButtonTextBold>
             </SignMessageButton>
 
         </Container>

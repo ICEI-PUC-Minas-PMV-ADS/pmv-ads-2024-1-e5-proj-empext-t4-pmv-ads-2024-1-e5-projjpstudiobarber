@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 const InputArea = styled.View`
     width: 100%;
     height: 60px;
-    background-color: #83D6E3;
+    background-color: #464A4C;
     flex-direction: row;
     border-radius: 30px;
     padding-left: 15px;
@@ -15,17 +15,17 @@ const InputArea = styled.View`
 const Input = styled.TextInput`
     flex: 1;
     font-size: 16px;
-    color: #268596;
+    color: #ffffff;
     margin=left: 10px;
 `;
 
 export default ({IconSvg, placeholder, value, onChangeText, password}) => {
         return (
             <InputArea>                
-                <IconSvg width="24" height="24" fill="#268596" />
+                <IconSvg width="24" height="24" fill="#ffffff" />
                 <Input 
                     placeholder={placeholder}
-                    placeholderTextColor="#268596"
+                    placeholderTextColor="#ffffff"
                     value={value}
                     onChangeText={onChangeText}
                     secureTextEntry={password}

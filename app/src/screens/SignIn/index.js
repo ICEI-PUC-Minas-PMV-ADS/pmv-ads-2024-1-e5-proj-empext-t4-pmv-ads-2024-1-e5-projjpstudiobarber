@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { UserContext } from '../../contexts/UserContext';
@@ -19,6 +20,7 @@ import Api from '../../Api';
 import SignInput from '../../components/SignInput';
 
 import BarberLogo from '../../assets/barber.svg';
+//import BarberLogo2 from '../../assets/logo1a.png';
 import EmailIcon from '../../assets/email.svg';
 import LockIcon from '../../assets/lock.svg';
 
@@ -64,7 +66,9 @@ export default () => {
 
     return (
         <Container>
+            
             <BarberLogo width="100%" height="160" />
+           
 
             <InputArea>
                 <SignInput
@@ -76,14 +80,14 @@ export default () => {
 
                 <SignInput
                     IconSvg={LockIcon}
-                    placeholder="Digite sua senha"
+                    placeholder="********"
                     value={passwordField}
                     onChangeText={t=>setPasswordField(t)}
                     password={true}
                 />
 
                 <CustomButton onPress={handleSignClick}>
-                    <CustomButtonText>LOGIN</CustomButtonText>
+                    <CustomButtonText>Entrar</CustomButtonText>
                 </CustomButton>
             </InputArea>
 
