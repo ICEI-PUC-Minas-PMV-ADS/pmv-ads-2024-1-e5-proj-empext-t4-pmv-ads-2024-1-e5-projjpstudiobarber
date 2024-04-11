@@ -1,9 +1,41 @@
 # Planos de Testes de Software
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+## FRONT END: MOBILE
  
+ ### 1 - Login/Cadastro
+  
+**1.1 - Verificar se o cadastro email já cadastrado na plataforma**
+   - Obejetivo: Verificar se o metodo create da API está funcionando de forma correta
+   - Passos: Acessar o Rest Test e preencher os campos solicitados 
+   - Criterio: Retorno do código 200 e caso o email já estejá cadastrado, uma mensagem de alerta será exibido
+
+**1.2 - Verificar se cadastro está sendo realizado sem nenhum problema**
+   - Obejetivo: Ter certeza que todos os dados estão sendo enviado de maneira corrreta
+   - Passos: Acessar o Rest Test e preencher os campos solicitados
+   - Criterio: Retorno do código 200 e mensagem do cadastro do usuário e token com sucesso
+
+**1.3 - Verificar se o  sistema deixa somente usuario cadastrados entrar na plataforma**
+   - Obejetivo: Verificar se o sistema deixa somente usuários cadastrados logar
+   - Passos: Acessar o Rest Test e preencher os campos solicitados, digitar um usuário/senha incorretamente
+   - Criterio: Retorno do código 200 e caso o usuário/senha esteja incorreto/não exista, o sistema deve barrar o login, exibindo mensagem de alerta
+
+## 
 # Evidências de Testes de Software
 
-Apresente imagens e/ou vídeos que comprovam que um determinado teste foi executado, e o resultado esperado foi obtido. Normalmente são screenshots de telas, ou vídeos do software em funcionamento.
+## API
+### 01 - Login/Cadastro 
+ **1.1 - Email já cadastrado**
+
+ ![](img/api/api_post_000.png)
+
+ **1.2 - Cadastro**
+
+ ![](img/api/api_post_002.png)
+
+ **1.3 - Rejeitar login user não cadastrado**
+
+ ![](img/api/api_post_003.png)
+
+ **1.3.1 - Login de user cadastrado**
+
+ ![](img/api/api_post_003.png)
