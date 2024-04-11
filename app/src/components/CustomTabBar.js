@@ -5,7 +5,7 @@ import { UserContext } from '../contexts/UserContext';
 
 import HomeIcon from '../assets/home.svg';
 //import SearchIcon from '../assets/search.svg';
-import TodayIcon from '../assets/my_location.svg';
+import TodayIcon from '../assets/Camada2.svg';
 //import FavoriteIcon from '../assets/favorite.svg';
 import AccountIcon from '../assets/account.svg';
 

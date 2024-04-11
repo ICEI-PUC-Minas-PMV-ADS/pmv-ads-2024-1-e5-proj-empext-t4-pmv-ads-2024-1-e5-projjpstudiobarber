@@ -6,8 +6,8 @@ import { useNavigation } from '@react-navigation/native';
 import { UserContext } from '../../contexts/UserContext';
 import Api from '../../Api';
 
-//import BarberLogo from '../../assets/barber.svg';
-import BarberLogo2 from '../../assets/barber.svg';
+
+import BarberLogo from '../../assets/jpsbarber.svg';
 
 export default () => {
 
@@ -48,7 +48,7 @@ export default () => {
 
     return (
         <Container>
-            <BarberLogo2 width="100%" height="160" />
+            <BarberLogo width="100%" height="160" />
             <LoadingIcon size="large" color="#000000" />
         </Container>
     );

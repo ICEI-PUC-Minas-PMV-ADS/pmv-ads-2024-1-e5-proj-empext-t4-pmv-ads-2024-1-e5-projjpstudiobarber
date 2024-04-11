@@ -18,7 +18,7 @@ import SignInput from '../../components/SignInput';
 
 import Api from '../../Api';
 
-import Barber from '../../logos/barber.svg';
+import Barber from '../../assets/jpsbarber.svg';
 import EmailIcon from '../../logos/email.svg';
 import LockIcon from '../../logos/lock.svg';
 import PersonIcon from '../../logos/person.svg';
