@@ -10,25 +10,38 @@ import FavoriteIcon from '../../assets/favorite.svg';
 
 import BackIcon from '../../assets/back.svg'; 
 
+
 import { 
     Scroller,
     Container,
+
     FakeSwiper,
     SwipeDot,
     SwipeDotActive,
     SwipeItem,
     SwipeImage,
+
     PageBody,
+
     UserInfoArea,
-    ServiceArea,
-    TestimonialArea,
     UserAvatar,
     UserInfo,
     UserInfoName,
     UserFavButton,
+    
     BackButton,
+    LoadingIcon,
 
- } from "../Home/styles";
+    ServiceArea,
+    ServiceItem,
+    ServiceName,
+    ServicePrice,
+    ServiceChoseButton,
+    ServiceChoseBtnText,
+    ServicesTitle,
+        
+    TestimonialArea,
+ } from './styles';
 
 import Api from "../../Api";
 
@@ -97,9 +110,31 @@ export default () => {
                             <FavoriteIcon width="24" height="24" fill="#FF0000" />
                         </UserFavButton>
                     </UserInfoArea>
-                    <ServiceArea>
+                    
+                    {loading &&
+                        <LoadingIcon size="large" color="#000000" />
+                    }
 
-                    </ServiceArea>
+
+                    
+                    {userInfo.services &&
+                        <ServiceArea>
+                            <ServicesTitle> Lista de serviços </ServicesTitle>
+
+                            {userInfo.services.map((item,key)=>(
+                                <ServiceItem key={key}>
+                                    <ServiceInfo>
+                                        <ServiceName>{item.name}</ServiceName>
+                                        <ServicePrice>R$ {item.price} </ServicePrice>
+                                    </ServiceInfo>
+                                    <ServiceChoseButton>
+                                        <ServiceChoseBtnText>Agendar</ServiceChoseBtnText>
+                                    </ServiceChoseButton>
+                                </ServiceItem>
+                            ))}
+
+                        </ServiceArea>
+                    }
                     <TestimonialArea>
 
                     </TestimonialArea>
