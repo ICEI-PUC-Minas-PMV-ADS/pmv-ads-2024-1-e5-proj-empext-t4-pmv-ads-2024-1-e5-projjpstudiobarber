@@ -1,50 +1,117 @@
-import React from "react";
-import { useNavigation} from '@react-navigation/native';
-import {
-     Container,
-     Scroller,
+import React, { useState, useEffect } from "react";
+import { Platform, RefreshControl } from 'react-native';
+import { request, PERMISSIONS } from 'react-native-permissions';
+import Api from "../../Api";
+import { 
+    Container,
+    Scroller,
+    HeaderArea,
+    HeaderTitle,
+    SearchButton,
+    
+    LocationArea,
+    LocationInput,
+    LocationFinder,
+    ListArea
 
-     HeaderArea,
-     HeaderTitle,
-     SearchButton,
+} from './styles';
 
-     LocationArea,
-     LocationInput,
-     LocationFinder,
+import BarberItem from '../../components/BarberItem';
 
+import { Text } from "react-native";
 
-     } from './styles';
-
-import SearchIcon from '../../assets/search.svg';
-import MyLocationIcon from '../../assets/my_location.svg';
-
-
+import SearchIcon from '../../logos/search.svg';
+import MyLocationIcon from '../../logos/my_location.svg';
+import { useNavigation } from "@react-navigation/native";
 
 export default () => {
 
     const navigation = useNavigation();
 
+    const handleLocationSearch = () => {
+        setCoords({});
+        getBarbers();
+    }
+
+    const [list, setList] = useState([]);
+
+    const [coords, setCoords] = useState(null);
+
+    const [locationText, setLocationText] = useState('');
+
+    const [loading, setLoading] = useState(false);
+
+    const [refreshing, setRefreshing] = useState(false);
+
+    const getBarbers = async () => {
+        setLoading(true);
+        setList([]);
+
+        let lat = null;
+        let lng = null;
+        if(coords) {
+            lat = coords.latitude;
+            lng = coords.longitude;
+        }
+
+        let res = await Api.getBarbers(lat, lng, locationText);        
+        if(res.error == '') {
+            if(res.loc){
+                setLocationText(res.loc);
+            }
+            setList(res.data);
+
+        } else {
+            alert("Erro: "+res.error);
+        }
+
+        setLoading(false);
+    }
+
+    useEffect(()=>{
+        getBarbers();
+    }, []);
+
+    const onRefresh = () => {
+        setRefreshing(false);
+        getBarbers();
+    }
+    
     return (
-        <Container>
-            <Scroller>
+        <Container>            
+                <Scroller refreshControl={
+                    <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+                }>
 
-                <HeaderArea>
-                    <HeaderTitle numberOfLines={2}>Encontre o seu barbeiro favorito</HeaderTitle>
-                    <SearchButton onPress={()=>navigation.navigate('Search')}>
-                        <SearchIcon width="26" height="26" fill="#c2995b" />
-                    </SearchButton>
-                </HeaderArea>
+                    <HeaderArea>
+                        <HeaderTitle numberOfLine={2}>Encontre o seu barbeiro favorito</HeaderTitle>
+                        <SearchButton onPress={()=>navigation.navigate('Search')}>
+                            <SearchIcon width="26" height="26" fill="#FFFFFF" />
+                        </SearchButton>
+                    </HeaderArea>
 
-                <LocationArea>
-                    <LocationInput
-                        placeholder="Onde voce está?"
-                        placeholderTextColor="#ffffff"                    
-                    />
-                    <LocationFinder>
-                        <MyLocationIcon width="24" heigth="24" fill="#c2995b" />
-                    </LocationFinder>
-                </LocationArea>
-            </Scroller>            
+                    <LocationArea>
+                        <LocationInput 
+                            placeholder="Onde você está?"
+                            placeholderTextColor="#FFFFFF"
+                            value={locationText}
+                            onChangeText={t=>setLocationText(t)}
+                            onEndEditing={handleLocationSearch}
+                        />
+                        <LocationFinder>
+                            <MyLocationIcon width="24" height="24" fill="#FFFFFF" />
+                        </LocationFinder>
+                    </LocationArea>
+
+                    <ListArea>
+                        {list.map((item, k)=>(
+                            <BarberItem key={k} data={item} />
+                        ))}
+                    </ListArea>
+
+
+
+                </Scroller>            
         </Container>
     );
 }

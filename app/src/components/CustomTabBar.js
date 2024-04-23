@@ -1,65 +1,77 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components/native';
+import React, { useContext } from "react";
+import styled from "styled-components/native";
 
 import { UserContext } from '../contexts/UserContext';
 
-import HomeIcon from '../assets/home.svg';
-//import SearchIcon from '../assets/search.svg';
-import TodayIcon from '../assets/Camada2.svg';
-//import FavoriteIcon from '../assets/favorite.svg';
-import AccountIcon from '../assets/account.svg';
+import HomeIcon from '../logos/home.svg';
+import SearchIcon from '../logos/search.svg';
+import TodayIcon from '../logos/today.svg';
+import FavoriteIcon from '../logos/favorite.svg';
+import AccountIcon from '../logos/account.svg';
 
 const TabArea = styled.View`
     height: 60px;
     background-color: #000000;
     flex-direction: row;
-    `;
+`;
 const TabItem = styled.TouchableOpacity`
-    flex:1;
+    flex: 1;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 `;
 const TabItemCenter = styled.TouchableOpacity`
-    width:70px;
+    width: 70px;
     height: 70px;
     justify-content: center;
     align-items: center;
     background-color: #000000;
     border-radius: 35px;
-    border: 3px solid #c2995b;
+    border: 3px solid #C2995B;
     margin-top: -20px;
-    `;
+`;
 const AvatarIcon = styled.Image`
     width: 24px;
     height: 24px;
     border-radius: 12px;
-    `;
+`;
 
-export default ({ state, navigation }) => {
-  const { state: user } = useContext(UserContext);
+export default ({state, navigation }) => {
 
-  const goTo = (screenName) => {
-    navigation.navigate(screenName);
-  }
+    const { state:user } = useContext(UserContext);
 
-  return (
-    <TabArea>
-      <TabItem onPress={() => goTo('Home')}>
-        <HomeIcon style={{ opacity: state.index === 0 ? 1 : 0.5 }} width="24" height="24" fill="#c2995b" />
-      </TabItem>
+    const goTo = (screenName) => {
+        navigation.navigate(screenName);
+    }
 
-      <TabItemCenter onPress={() => goTo('Appointments')}>
-        <TodayIcon style={{ opacity: state.index === 2 ? 1 : 0.5 }} width="40" height="40" fill="#c2995b" />
-      </TabItemCenter>
+    return (
+        <TabArea>
+            <TabItem onPress={()=>goTo('Home')}>
+                <HomeIcon style={{opacity: state.index===0? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />
+            </TabItem>
+            <TabItem onPress={()=>goTo('Search')}>
+                <SearchIcon style={{opacity: state.index===1? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />
+            </TabItem>
+            <TabItemCenter onPress={()=>goTo('Appointments')}>
+                <TodayIcon width="32" height="32" fill="#C2995B" />
+            </TabItemCenter>
+            <TabItem onPress={()=>goTo('Favorites')}>
+                <FavoriteIcon style={{opacity: state.index===3? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />
+            </TabItem>
+            <TabItem onPress={()=>goTo('Barber')}>
+                <FavoriteIcon style={{opacity: state.index===3? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />
+            </TabItem>
+            <TabItem onPress={()=>goTo('Profile')}>
+                {
+                    // verificar se novo usuário carrega avatar padrão
+                }
+                {user.avatar != '' ? 
+                    <AvatarIcon source={{uri: user.avatar}} />                    
+                    :
+                    <AccountIcon style={{opacity: state.index===4? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />                    
+                }         
+            </TabItem>
 
-      <TabItem onPress={() => goTo('Profile')}>
-        {user.avatar != '' ?
-          <AvatarIcon source={{uri: user.avatar}} />
-          :
-          <AccountIcon style={{opacity: state.index === 4 ? 1 : 0.5 }} width="24" height="24" fill="#c2995b" />
+        </TabArea>
 
-        }
-      </TabItem>
-    </TabArea>
-  );
+    );
 }

@@ -18,11 +18,10 @@ import SignInput from '../../components/SignInput';
 
 import Api from '../../Api';
 
-import Barber from '../../assets/jpsbarber.svg';
+import Barber from '../../logos/jpsbarber.svg';
 import EmailIcon from '../../logos/email.svg';
 import LockIcon from '../../logos/lock.svg';
 import PersonIcon from '../../logos/person.svg';
-
 
 export default () => {
 
@@ -69,9 +68,7 @@ export default () => {
     }
 
     return (
-        
         <Container>
-            
             <Barber width="100%" height="160" />
 
             <InputArea>
@@ -98,14 +95,14 @@ export default () => {
                 />
 
                 <CustomButton onPress={handleSignClick}>
-                    <CustomButtonText>CRIAR CONTA</CustomButtonText>                    
+                    <CustomButtonText>CADASTRAR</CustomButtonText>                    
                 </CustomButton>
 
             </InputArea>
 
             <SignMessageButton onPress={handleMessageButtonClick}>
                 <SignMessageButtonText>Já possui uma conta?</SignMessageButtonText>
-                <SignMessageButtonTextBold>Entrar</SignMessageButtonTextBold>
+                <SignMessageButtonTextBold>Faça Login</SignMessageButtonTextBold>
             </SignMessageButton>
 
         </Container>

@@ -5,7 +5,7 @@ import { Text } from "react-native";
 export default () => {
     return (
         <Container>
-            <Text>
+            <Text color="#FFFFFF">
                 SEARCH
             </Text>
         </Container>
