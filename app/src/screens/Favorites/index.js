@@ -6,7 +6,7 @@ export default () => {
     return (
         <Container>
             <Text>
-                FAVORITES 28527853
+                FAVORITES 28527852
             </Text>
         </Container>
     );

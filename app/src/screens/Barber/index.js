@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from "react";
-import { Container } from './styles';
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { Text } from "react-native";
 import Swiper from 'react-native-swiper';
 
 import Stars from '../../components/Stars';
 
-import FavoriteIcon from '../../assets/favorite.svg';
+import FavoriteIcon from '../../logos/favorite.svg';
 
-import BackIcon from '../../assets/back.svg'; 
+import BackIcon from '../../logos/back.svg'; 
 
 
 import { 

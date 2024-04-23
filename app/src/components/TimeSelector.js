@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import NavNext from '../logos/nav_next.svg'
 import NavPrev from '../logos/nav_prev.svg'
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 const CustomText = styled.Text`
     color: white;
@@ -56,7 +56,7 @@ const TimeSelector = ({ appointments, selected, setSelected }) => {
         const isSelected = selectedAppointment === appointment;
 
         return (
-            <View key={appointment.time} style={{ gap: '10 0', padding: 10}}>
+            <View key={appointment.time} style={{ gap: 10, padding: 10}}>
                 <TouchableOpacity
                     onPress={() => setSelectedAppointment(appointment)}
                     style={{
@@ -72,12 +72,12 @@ const TimeSelector = ({ appointments, selected, setSelected }) => {
         );
     };
     if (appointments.length === 0) return (
-        <View style={{ backgroundColor: '#292a2c', width: '100%', height: 50, borderRadius: '20px' }}>
+        <View style={{ backgroundColor: '#292a2c', width: '100%', height: 50, borderRadius: 20 }}>
             <CustomText>Nenhum horário para esse dia</CustomText>
         </View>
     );
     return (
-        <View style={{ backgroundColor: '#292a2c', width: '100%', borderRadius: '20px' }}>
+        <View style={{ backgroundColor: '#292a2c', width: '100%', borderRadius: 20 }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
                 <TouchableOpacity onPress={handlePrev}>
                     <CustomNavPrev />

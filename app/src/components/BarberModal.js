@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import {useNavigation} from '@react-navigation/native';
 import { Modal } from "react-native";
 
-import ExpandIcon from '../assets/expand.svg';
+import ExpandIcon from '../logos/expand.svg';
 
 const Modal = styled.Modal``;
 
@@ -130,4 +130,3 @@ export default ({show, setShow, user, service}) => {
         </Modal>
     );
 }
-
