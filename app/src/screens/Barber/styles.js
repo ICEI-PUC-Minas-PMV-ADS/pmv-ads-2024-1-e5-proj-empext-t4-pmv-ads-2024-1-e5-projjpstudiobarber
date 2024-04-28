@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-    flex 1;
+    flex: 1;
     background-color: #FFFFFF;   
 `;
 
@@ -28,7 +28,7 @@ export const SwipeDotActive = styled.View`
 
 export const SwipeItem = styled.View`
     flex: 1;
-    background-color: #63C2D1;
+    background-color: #141416;
 `;
 
 export const SwipeImage = styled.Image`
@@ -38,7 +38,7 @@ export const SwipeImage = styled.Image`
 
 export const FakeSwiper = styled.View`
     height: 240px;
-    background-color: #63C2D1;
+    background-color: #141416;
 `;
 
 export const PageBody = styled.View`

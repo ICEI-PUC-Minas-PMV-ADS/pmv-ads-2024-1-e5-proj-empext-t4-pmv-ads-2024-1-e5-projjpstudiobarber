@@ -42,7 +42,7 @@ import {
     TestimonialArea,
  } from './styles';
 
-import Api from "../../Api";
+import Api from '../../Api';
 
 
 export default () => {
@@ -63,7 +63,7 @@ export default () => {
 
             let json = await Api.getBarber(userInfo.id);
             if(json.error == '') {
-                //setUserInfo(json.data);
+                setUserInfo(json.data);
             } else{
                 alert("Erro: "+json.error);
             }
