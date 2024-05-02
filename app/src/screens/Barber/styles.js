@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
     flex: 1;
-    background-color: #FFFFFF;   
+    background-color: #141416;   
 `;
 
 export const Scroller = styled.ScrollView`
@@ -42,7 +42,7 @@ export const FakeSwiper = styled.View`
 `;
 
 export const PageBody = styled.View`
-    background-color: #FFFFFF;
+    background-color: #141416;
     border-top-left-radius: 50px;
     margin-top: -50px;
     min-height: 400px;
@@ -60,7 +60,7 @@ export const UserAvatar = styled.Image`
     margin-left: 30px;
     margin-right: 20px;
     border-width: 4px;
-    border-color: #FFFFFF;
+    border-color: #C2995B;
 `;
 
 export const UserInfo = styled.View`
@@ -69,7 +69,7 @@ export const UserInfo = styled.View`
 `;
 
 export const UserInfoName = styled.Text`
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -79,7 +79,7 @@ export const UserFavButton = styled.TouchableOpacity`
     width: 40px;
     height: 40px;
     background-color: #FFFFFF;
-    border: 2px solid #999999;
+    border: 2px solid #C2995B;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,7 @@ export const ServiceArea = styled.View`
 `;
 
 export const ServicesTitle = styled.Text`
-    color: #268596; 
+    color: #C2995B; 
     font-size: 18px;
     font-weight: bold;
     margin-left: 30px;
@@ -114,28 +114,58 @@ export const ServiceInfo = styled.View`
 export const ServiceName = styled.Text`
     font-size: 16px;
     font-weight: bold;
-    color: #268596;
+    color: #C2995B;
 `;
 
 export const ServicePrice = styled.Text`
     font-size: 14px;
-    color: #268596;
+    color: #C2995B;
 `;
 
-export const ServiceChoseButton = styled.TouchableOpacity`
-    background-color: #4EADBE;
+export const ServiceChooseButton = styled.TouchableOpacity`
+    background-color: #C2995B;
     border-radius: 10px;
-    pading: 10px 15px;
+    pading: 20px 20px;
+    padding: 10px;
 `;
 
-export const ServiceChoseBtnText = styled.Text`
+export const ServiceChooseBtnText = styled.Text`
     font-size: 14px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #000000;
 `;
 
 
-export const TestimonialArea = styled.View``;
+export const TestimonialArea = styled.View`
+    margin-top:30px;
+`;    
+
+export const TestimonialItem = styled.View`
+    background-color: #464A4C;
+    padding: 15px;
+    border-radius: 10px;
+    height: 110px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+`;
+
+export const TestimonialInfo = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+`;
+export const TestimonialName = styled.Text`
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+`;
+export const TestimonialBody = styled.Text`
+    color: #FFFFFF;
+    font-size: 13px;
+`;
+
+
 
 export const BackButton = styled.TouchableOpacity`
     position: absolute;
@@ -146,5 +176,6 @@ export const BackButton = styled.TouchableOpacity`
 
 export const LoadingIcon =  styled.ActivityIndicator`
     margin-top: 50px;
+    color: #C2995B;
 `;
 
