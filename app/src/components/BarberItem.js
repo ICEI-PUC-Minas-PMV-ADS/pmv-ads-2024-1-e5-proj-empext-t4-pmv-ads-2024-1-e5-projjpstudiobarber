@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/native";
+import { useNavigation } from '@react-navigation/native';
 
 import Stars from '../components/Stars';
 
@@ -31,7 +32,7 @@ const Username = styled.Text`
 const SeeProfileButton = styled.View`
     width: 85px;
     height: 26px;
-    border: 1px solid #4EADBE;
+    border: 1px solid #C2995B;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -39,23 +40,24 @@ const SeeProfileButton = styled.View`
 
 const SeeProfileButtonText = styled.Text`
     font-size: 13px;
-    color: #268596;
+    color: #C2995B;
 `;
-
-	
-const handleClick = () => {
-	navigation.navigate('Barber', {
-		id: data.id,
-		avatar: data.avatar,
-		name: data.name,
-		stars: data.stars
-	});
-}
 
 
 export default ({data}) => {
+    const navigation = useNavigation();
+
+    const handleClick = () => {
+        navigation.navigate('Barber', {
+            id: data.id,
+            avatar: data.avatar,
+            name: data.name,
+            stars: data.stars,
+        });
+    }
+
     return (
-        <Area>
+        <Area onPress={handleClick}>
             <Avatar source={{uri: data.avatar}}/>
             <InfoArea>
                 <Username>{data.name}</Username>

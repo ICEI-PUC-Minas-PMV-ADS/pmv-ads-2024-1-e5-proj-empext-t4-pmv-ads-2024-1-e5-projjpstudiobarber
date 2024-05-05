@@ -57,9 +57,6 @@ export default ({state, navigation }) => {
             <TabItem onPress={()=>goTo('Favorites')}>
                 <FavoriteIcon style={{opacity: state.index===3? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />
             </TabItem>
-            <TabItem onPress={()=>goTo('Barber')}>
-                <FavoriteIcon style={{opacity: state.index===3? 1 : 0.5}} width="24" height="24" fill="#FFFFFF" />
-            </TabItem>
             <TabItem onPress={()=>goTo('Profile')}>
                 {
                     // verificar se novo usuário carrega avatar padrão
