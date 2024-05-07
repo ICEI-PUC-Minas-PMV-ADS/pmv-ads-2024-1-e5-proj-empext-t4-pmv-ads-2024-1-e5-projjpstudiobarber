@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, TouchableOpacity } from 'react-native';
-import NavNext from '../logos/nav_next.svg'
-import NavPrev from '../logos/nav_prev.svg'
+import NavNext from '../logos/nav_next.svg';
+import NavPrev from '../logos/nav_prev.svg';
 import styled from 'styled-components/native';
 
 const CustomText = styled.Text`
