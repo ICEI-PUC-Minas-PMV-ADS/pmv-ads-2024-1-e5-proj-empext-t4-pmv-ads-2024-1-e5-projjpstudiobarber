@@ -280,7 +280,8 @@ export default ({ show, setShow, user, service }) => {
             );
             if(res.error == '') {
                 setShow(false);
-                navigation.navigate('Appointments')
+                navigation.navigate('Appointments');
+                
             }
             setShow(false);
 

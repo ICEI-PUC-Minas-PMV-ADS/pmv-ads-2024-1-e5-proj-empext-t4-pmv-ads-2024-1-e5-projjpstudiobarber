@@ -39,3 +39,42 @@
  **1.3.1 - Login de user cadastrado**
 
  ![](img/api/api_post_003.png)
+
+
+
+## API
+### 01 - Login/Cadastro 
+ **1.1 - Tela de Login**
+
+  ![](img/Testes/Print-login.jpeg)
+
+  **1.2 - Tela de Cadastro**
+
+  ![](img/Testes/Print-cadastro.jpeg)
+
+  **1.3 - Tela de Cadastro**
+
+  ![](img/Testes/Print-Agenda.jpeg)
+
+  Com erro no menus ainda.
+
+  **1.4 - Tela de Perfil do Barbeiro**
+
+
+  ![](img/Testes/Print-Perfil1.jpeg)
+
+  **1.4.1 - Tela de Perfil do Barbeiro**
+
+  ![](img/Testes/Print-Perfil2.jpeg)
+
+  **1.4.2 - Tela de Perfil do Barbeiro**
+
+  ![](img/Testes/Print_Perfil3.jpeg)
+
+  **1.4.3 - Tela de Perfil do Barbeiro**
+
+  ![](img/Testes/Print-Perfil4.jpeg)
+
+  **1.4.4 - Tela de Perfil do Barbeiro**
+
+  ![](img/Testes/Print-Perfil5.jpeg)

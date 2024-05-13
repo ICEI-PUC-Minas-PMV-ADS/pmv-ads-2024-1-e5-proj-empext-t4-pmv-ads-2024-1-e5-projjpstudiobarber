@@ -79,7 +79,7 @@ export default {
         });
         const json = await req.json();
         return json;
-    },
+    }/*,
     setAppointment: async (userId,
         service,
         selectedYear,
@@ -106,7 +106,7 @@ export default {
         });
         const json = await req.json();
         return json;
-        }
+        }*/
 
     
 };
