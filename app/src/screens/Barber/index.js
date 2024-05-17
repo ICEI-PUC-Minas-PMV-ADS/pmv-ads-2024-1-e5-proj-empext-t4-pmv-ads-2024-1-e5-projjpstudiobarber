@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigation, useRoute } from '@react-navigation/native'
+import { useNavigation, useRoute } from '@react-navigation/native';
 import { Text } from 'react-native';
 import Swiper from 'react-native-swiper';
 
 import Stars from '../../components/Stars';
-//import BarberModal from '../../components/BarberModal2.js';
+import BarberModal from '../../components/BarberModal.js';
 
 import FavoriteFullIcon from '../../assets/favorite_full.svg';
 import FavoriteIcon from '../../assets/favorite.svg';
@@ -75,6 +75,7 @@ export default () => {
             if (json.error == '') {
                 setUserInfo(json.data);
                 setFavorited(json.data.favorited);
+                //console.log(json.data.available);
             } else {
                 alert("Erro: " + json.error);
             }
@@ -193,8 +194,13 @@ export default () => {
             <BackButton onPress={handleBackButton}>
                 <BackIcon width="44" height="44" fill='#FFFFFF' />
             </BackButton>
-
+            <BarberModal
+                show={showModal}
+                setShow={setShowModal}
+                user={userInfo}
+                service={selectedService}
             
+            />
         </Container>
     );
 }
