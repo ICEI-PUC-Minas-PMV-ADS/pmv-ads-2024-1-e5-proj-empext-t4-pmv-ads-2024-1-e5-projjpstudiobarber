@@ -1,0 +1,14 @@
+{
+    "MD013": {
+        "line_length": 180,
+        "code_block_line_length": 200,
+        "tables": false
+    },
+    "MD033": {
+        "allowed_elements": [
+            "figure",
+            "img",
+            "figcaption"
+        ]
+    }
+}
