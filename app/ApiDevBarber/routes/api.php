@@ -13,6 +13,8 @@ Route::get('/ping', function () {
 
 Route::get('/401', [AuthController::class, 'unauthorized'])->name('login');
 
+//Route::get('/random', [BarberController::class, 'createRandom']);
+
 Route::post('/auth/login', [AuthController::class, 'login']);
 Route::post('/auth/logout', [AuthController::class, 'logout']);
 Route::post('/auth/refresh', [AuthController::class, 'refresh']);
