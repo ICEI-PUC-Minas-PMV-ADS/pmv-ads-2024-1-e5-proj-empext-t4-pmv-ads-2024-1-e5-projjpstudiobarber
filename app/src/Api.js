@@ -1,6 +1,7 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { add } from 'react-native-reanimated';
 
-const BASE_API = 'https://api.b7web.com.br/devbarber/api';
+const BASE_API = 'http://10.0.2.2:8000/api';
 
 export default {
     checkToken: async (token) => {
@@ -55,58 +56,14 @@ export default {
     },
     getBarbers: async (lat=null, lng=null, address=null) => {
         const token = await AsyncStorage.getItem('token');
-        const req = await fetch (`${BASE_API}/barbers?token=${token}&lat=${lat}&lng=${lng}&address=${address}`);
-        const json = await req.json();
-        return json;
-    },
-    getBarber: async (id) => {
-        const token = await AsyncStorage.getItem('token');
-        const req = await fetch(`${BASE_API}/barber/${id}?token=${token}`);
-        const json = await req.json();
-        console.log(json);
-        return json;
-    },
-    setFavorite: async (barberId) => {
-        const token = await AsyncStorage.getItem('token');
 
-        const req = await fetch(`${BASE_API}/user/favorite`, {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({barber:barberId})
-        });
+        console.log("LAT", lat);
+        console.log("LNG", lng);
+        console.log("ADDRESS", address);
+
+        const req = await fetch(`${BASE_API}/barbers?token=${token}&lat=${lat}&lng=${lng}&address=${address}`);
         const json = await req.json();
         return json;
-    }/*,
-    setAppointment: async (userId,
-        service,
-        selectedYear,
-        selectedMonth,
-        selectedDay,
-        selectedHour) => {
-        const token = await AsyncStorage.getItem('token');
+    }
 
-        const req = await fetch(`${BASE_API}/user/appointment`, {
-            method: 'POST',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                token, 
-                id: userId,
-                service,
-                year: selectedYear,
-                month: selectedMonth,
-                day: selectedDay,
-                hour: selectedHour
-            })
-        });
-        const json = await req.json();
-        return json;
-        }*/
-
-    
 };

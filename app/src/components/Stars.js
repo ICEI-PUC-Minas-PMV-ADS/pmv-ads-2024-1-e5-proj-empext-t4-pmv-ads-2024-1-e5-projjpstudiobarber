@@ -1,14 +1,13 @@
-import React from "react";
-import styled from "styled-components/native";
+import React from 'react';
+import styled from 'styled-components/native';
 
-import StarFull from '../logos/star.svg';
-import StarHalf from '../logos/star_half.svg';
-import StarEmpty from '../logos/star_empty.svg';
+import StarFull from '../assets/star.svg';
+import StarHalf from '../assets/star_half.svg';
+import StarEmpty from '../assets/star_empty.svg';
 
 const StarArea = styled.View`
     flex-direction: row;
 `;
-
 const StarView = styled.View``;
 
 const StarText = styled.Text`
@@ -40,8 +39,6 @@ export default ({ stars, showNumber }) => {
                 </StarView>
             ))}
             {showNumber && <StarText>{stars}</StarText>}
-
         </StarArea>
-
     );
 }

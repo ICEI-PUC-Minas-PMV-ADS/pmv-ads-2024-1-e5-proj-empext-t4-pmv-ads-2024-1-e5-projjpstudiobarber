@@ -1,13 +1,11 @@
-import React from "react";
+import React from 'react';
+import { Text } from 'react-native';
 import { Container } from './styles';
-import { Text } from "react-native";
 
 export default () => {
     return (
         <Container>
-            <Text color="#FFFFFF">
-                SEARCH
-            </Text>
+            <Text>Search</Text>
         </Container>
     );
 }

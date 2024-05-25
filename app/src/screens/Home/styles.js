@@ -17,14 +17,14 @@ export const HeaderArea = styled.View`
     align-items: center;
 `;
 export const HeaderTitle = styled.Text`
-    width:  340px;
+    width:  300px;
     font-size: 24px;
     font-weight: bold;
     color: #F6E9C3;
 `;
 export const SearchButton = styled.TouchableOpacity`
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
 `;
 
 export const LocationArea = styled.View`
