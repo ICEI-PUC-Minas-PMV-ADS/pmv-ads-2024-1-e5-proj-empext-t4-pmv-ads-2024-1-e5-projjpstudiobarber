@@ -1,13 +1,11 @@
-import React from "react";
+import React from 'react';
+import { Text } from 'react-native';
 import { Container } from './styles';
-import { Text } from "react-native";
 
 export default () => {
     return (
         <Container>
-            <Text>
-                FAVORITES 28527852
-            </Text>
+            <Text>Favorites</Text>
         </Container>
     );
 }

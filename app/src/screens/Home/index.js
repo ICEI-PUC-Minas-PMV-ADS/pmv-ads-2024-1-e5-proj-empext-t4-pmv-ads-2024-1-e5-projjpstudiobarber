@@ -90,7 +90,7 @@ export default () => {
                         </SearchButton>
                     </HeaderArea>
 
-                    <LocationArea>
+                   {/*} <LocationArea>
                         <LocationInput 
                             placeholder="Onde você está?"
                             placeholderTextColor="#FFFFFF"
@@ -101,7 +101,7 @@ export default () => {
                         <LocationFinder>
                             <MyLocationIcon width="24" height="24" fill="#FFFFFF" />
                         </LocationFinder>
-                    </LocationArea>
+            </LocationArea>*/}
 
                     <ListArea>
                         {list.map((item, k)=>(

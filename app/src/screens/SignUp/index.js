@@ -3,15 +3,14 @@ import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { UserContext } from '../../contexts/UserContext';
-
-import { 
+import {
     Container,
     InputArea,
     CustomButton,
     CustomButtonText,
     SignMessageButton,
     SignMessageButtonText,
-    SignMessageButtonTextBold 
+    SignMessageButtonTextBold
 } from './styles';
 
 import SignInput from '../../components/SignInput';
@@ -24,21 +23,20 @@ import LockIcon from '../../logos/lock.svg';
 import PersonIcon from '../../logos/person.svg';
 
 export default () => {
-
     const { dispatch: userDispatch } = useContext(UserContext);
 
     const navigation = useNavigation();
-    
+
     const [nameField, setNameField] = useState('');
     const [emailField, setEmailField] = useState('');
     const [passwordField, setPasswordField] = useState('');
 
     const handleSignClick = async () => {
-        if(nameField != '' && emailField != '' && passwordField != ''){
-            let res = await Api.signUp(nameField, emailField, passwordField)
-
+        if(nameField != '' && emailField != '' && passwordField != '') {
+            let res = await Api.signUp(nameField, emailField, passwordField);
+            
             if(res.token) {
-                await AsyncStorage.setItem('token', res.token)
+                await AsyncStorage.setItem('token', res.token);
 
                 userDispatch({
                     type: 'setAvatar',
@@ -48,19 +46,17 @@ export default () => {
                 });
 
                 navigation.reset({
-                    routes:[{name: 'MainTab'}]
+                    routes:[{name:'MainTab'}]
                 });
 
             } else {
                 alert("Erro: "+res.error);
             }
-
         } else {
             alert("Preencha os campos");
         }
-
     }
-    
+
     const handleMessageButtonClick = () => {
         navigation.reset({
             routes: [{name: 'SignIn'}]
@@ -108,4 +104,3 @@ export default () => {
         </Container>
     );
 }
-
