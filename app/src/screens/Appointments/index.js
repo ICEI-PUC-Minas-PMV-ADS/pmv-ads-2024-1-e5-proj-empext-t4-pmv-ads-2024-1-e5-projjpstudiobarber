@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 export default () => {
     return (
-        <Container>
+        <Container >
             <Text>Appointments</Text>
         </Container>
     );

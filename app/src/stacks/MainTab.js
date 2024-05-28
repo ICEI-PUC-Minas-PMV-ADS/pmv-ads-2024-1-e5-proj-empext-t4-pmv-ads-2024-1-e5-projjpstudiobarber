@@ -12,7 +12,17 @@ import Profile from '../screens/Profile';
 const Tab = createBottomTabNavigator();
 
 export default () => (
-    <Tab.Navigator tabBar={props=><CustomTabBar {...props} />}>
+    <Tab.Navigator
+        screenOptions={{
+            headerShown: true,
+            headerStyle: {
+                height: 40, // Define a altura do header
+                backgroundColor: 'black', // Define a cor de fundo como transparente
+            },
+            headerTitle: '', // Remove o texto do header
+        }}
+        tabBar={props => <CustomTabBar {...props} />}
+    >
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Search" component={Search} />
         <Tab.Screen name="Appointments" component={Appointments} />
