@@ -14,11 +14,7 @@ export default () => (
     <Stack.Navigator
         initialRouteName="Preload"
         screenOptions={{
-            headerShown: true,
-            headerStyle: {
-                height: 50, // Define a altura do header
-            },
-            headerTitle: '', // Remove o texto do header
+            headerShown: false
         }}
     >
         <Stack.Screen name="Preload" component={Preload} />

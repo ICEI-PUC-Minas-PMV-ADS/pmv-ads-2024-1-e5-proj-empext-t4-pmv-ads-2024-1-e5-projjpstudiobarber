@@ -7,3 +7,70 @@ export const Container = styled.SafeAreaView`
     justify-content: center;
     align-items: center;  
 `;
+
+export const Scroller = styled.ScrollView`
+    flex: 1;
+    padding: 20px;
+`;
+
+export const HeaderArea = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`;
+export const HeaderTitle = styled.Text`
+    width:  300px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F6E9C3;
+`;
+export const SearchButton = styled.TouchableOpacity`
+    width: 30px;
+    height: 30px;
+`;
+
+export const LocationArea = styled.View`
+    background-color: #464A4C;
+    height: 60px;
+    border-radius: 30px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+`;
+export const LocationInput = styled.TextInput`
+    flex: 1;
+    font-size: 16px;
+    color: #FFFFFF;
+`;
+export const LocationFinder = styled.TouchableOpacity`
+    width: 24px;
+    height: 24px;
+`;
+export const ListArea = styled.View`
+    margin-top: 30px;
+    margin-bottom: 30px;
+`;
+export const Appointment = styled.View`
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    shadow-color: #000;
+    shadow-offset: { width: 0, height: 2 };
+    shadow-opacity: 0.25;
+    shadow-radius: 3.84px;
+    elevation: 5;
+`;
+
+Appointment.Title = styled.Text`
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+`;
+
+Appointment.Text = styled.Text`
+    font-size: 16px;
+    margin-bottom: 5px;
+`;
