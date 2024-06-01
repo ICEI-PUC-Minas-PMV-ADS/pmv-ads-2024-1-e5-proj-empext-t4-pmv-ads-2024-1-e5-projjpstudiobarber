@@ -11,7 +11,8 @@ import {
 } from './styles';
 
 import BarberItem from '../../components/BarberItem';
-import SearchIcon from '../../logos/search.svg';
+import SearchIcon from '../../assets/today.svg';
+
 import { useNavigation } from "@react-navigation/native";
 
 export default () => {
@@ -20,7 +21,11 @@ export default () => {
     const [refreshing, setRefreshing] = useState(false);
 
     const getBarbers = async () => {
-        let res = await Api.getBarbers();
+
+        let lat = null;
+        let lng = null;
+
+        let res = await Api.getBarbers(lat, lng);
         if (res.error == '') {
             setList(res.data);
         } else {
@@ -67,6 +72,16 @@ export default () => {
                         />
                     )}
                 </ListArea>
+                <SearchButton onPress={() => navigation.navigate('Appointments')}>
+                        <SearchIcon
+                            width="26"
+                            height="26"
+                            fill="#C2995B" // Define a cor como transparente
+                           
+                        />
+                    </SearchButton>                   
+                    
+
             </Scroller>
         </Container>
     );
