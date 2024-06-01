@@ -47,7 +47,7 @@ export default () => {
                 <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
             }>
                 <HeaderArea>
-                    <HeaderTitle numberOfLines={2}>Olá, seja bem vindo(a) de volta</HeaderTitle>
+                    <HeaderTitle numberOfLines={2}>Olá, seja bem vindo(a)!</HeaderTitle>
                     <SearchButton onPress={() => navigation.navigate('Search')}>
                         <SearchIcon
                             width="26"

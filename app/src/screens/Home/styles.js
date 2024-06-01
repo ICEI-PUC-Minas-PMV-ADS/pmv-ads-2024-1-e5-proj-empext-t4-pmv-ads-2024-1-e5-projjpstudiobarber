@@ -23,6 +23,7 @@ export const HeaderTitle = styled.Text`
     font-size: 24px;
     font-weight: bold;
     color: #F6E9C3;
+    text-align: center;
 `;
 export const SearchButton = styled.TouchableOpacity`
     width: 30px;
@@ -49,6 +50,6 @@ export const LocationFinder = styled.TouchableOpacity`
     height: 24px;
 `;
 export const ListArea = styled.View`
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 `;
