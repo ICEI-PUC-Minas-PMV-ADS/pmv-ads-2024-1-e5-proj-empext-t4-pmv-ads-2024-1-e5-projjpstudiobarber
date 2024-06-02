@@ -13,9 +13,9 @@ const Area = styled.TouchableOpacity`
 
 const Avatar = styled.Image`
     width: 88px;
-    height: 88px;
+    height: 108px;
     border-radius: 20px;
-`;
+`; // esse height configura a altura da foto, 108 está ajustando para a foto atual do Jonatas
 
 const InfoArea = styled.View`
     margin-left: 20px;
@@ -30,7 +30,7 @@ const UserName = styled.Text`
 const SeeProfileButton = styled.View`
     width: 85px;
     height: 26px;
-    border: 1px solid #4EADBE;
+    border: 2px solid #C2995B;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ const SeeProfileButton = styled.View`
 
 const SeeProfileButtonText = styled.Text`
     font-size: 13px;
-    color: #268596;
+    color: #C2995B;
 `;
 
 

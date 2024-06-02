@@ -20,7 +20,7 @@ export default () => {
             <Text>
                 PROFILE
             </Text>
-            <Button title="Sair" onPress={handleLogoutClick}/>
+            <Button title="    Sair do JP Barber    " onPress={handleLogoutClick}/>
         </Container>
     );
 }
