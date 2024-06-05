@@ -6,7 +6,7 @@ export default () => {
     return (
         <Container>
             <Text>
-                FAVORITES 28527852
+                Pagina em construção (Historico e favoritos)
             </Text>
         </Container>
     );

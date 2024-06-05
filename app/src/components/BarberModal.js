@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components/native";
 import { useNavigation } from "@react-navigation/native";
-//import { Modal } from "react-native";
-
+import { Modal, Alert } from "react-native"; // Importando o Alert
 import Api from '../Api';
-
 import ExpandIcon from '../logos/expand.svg';
 import NavPrevIcon from '../assets/nav_prev.svg';
 import NavNextIcon from '../assets/nav_next.svg';
-
-const Modal = styled.Modal``;
 
 const ModalArea = styled.View`
     flex: 1;
@@ -106,15 +102,15 @@ const DateTitle = styled.Text`
 `;
 
 const DateNextArea = styled.TouchableOpacity`
-flex: 1;
-align-items: flex-start;
+    flex: 1;
+    align-items: flex-start;
 `;
 
 const DateList = styled.ScrollView``;
 
 const DateItem = styled.TouchableOpacity`
     width: 45px;
-    justfy-content: center;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     padding-top: 5px;
@@ -127,8 +123,8 @@ const DateItemWeekDay = styled.Text`
 `;
 
 const DateItemNumber = styled.Text`
-font-size: 16px;
-font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 `;
 
 const TimeList = styled.ScrollView``;
@@ -144,7 +140,6 @@ const TimeItem = styled.TouchableOpacity`
 const TimeItemText = styled.Text`
     font-size: 16px;
 `;
-
 
 const months = [
     'Janeiro',
@@ -171,8 +166,8 @@ const days = [
 ];
 
 export default ({ show, setShow, user, service }) => {
-    const navigation = useNavigation();
 
+    const navigation = useNavigation();
     const [selectedYear, setSelectedYear] = useState(0);
     const [selectedMonth, setSelectedMonth] = useState(0);
     const [selectedDay, setSelectedDay] = useState(0);
@@ -180,38 +175,35 @@ export default ({ show, setShow, user, service }) => {
     const [listDays, setListDays] = useState([]);
     const [listHours, setListHours] = useState([]);
 
-
     useEffect(()=>{
-        //console.log("user.available", user.available);
         if(user.available) {
-                let daysInMonth = new Date(selectedYear, selectedMonth+1, 0).getDate();
-                let newListDays = [];
+            let daysInMonth = new Date(selectedYear, selectedMonth+1, 0).getDate();
+            let newListDays = [];
 
-                for(let i=1;i<=daysInMonth;i++) {
-                    let d = new Date(selectedYear, selectedMonth, i);
-                    let year = d.getFullYear();
-                    let month = d.getMonth() + 1;
-                    let day = d.getDate();
-                    month = month < 10 ? '0'+month : month;
-                    day = day < 10 ? '0'+day : day;            
-                    let selDate = `${year}-${month}-${day}`;
+            for(let i=1;i<=daysInMonth;i++) {
+                let d = new Date(selectedYear, selectedMonth, i);
+                let year = d.getFullYear();
+                let month = d.getMonth() + 1;
+                let day = d.getDate();
+                month = month < 10 ? '0'+month : month;
+                day = day < 10 ? '0'+day : day;            
+                let selDate = `${year}-${month}-${day}`;
 
-                    let availability = user.available.filter(e=>e.date === selDate);
+                let availability = user.available.filter(e=>e.date === selDate);
 
-
-                    newListDays.push({
-                        status: availability.length > 0 ? true : false,
-                        weekday: days[ d.getDay() ],
-                        number: i
-                    });
+                newListDays.push({
+                    status: availability.length > 0 ? true : false,
+                    weekday: days[d.getDay()],
+                    number: i
+                });
             }
 
             setListDays(newListDays);
             setSelectedDay(0);
             setListHours([]);
-            setSelectedHour(0);
+            setSelectedHour(null);
         }   
-    }, [ user, selectedMonth, selectedYear]);
+    }, [user, selectedMonth, selectedYear]);
 
     useEffect(()=>{
         if(user.available && selectedDay > 0) {
@@ -223,68 +215,78 @@ export default ({ show, setShow, user, service }) => {
             day = day < 10 ? '0'+day : day;            
             let selDate = `${year}-${month}-${day}`;
 
-            let availability = user.available.filter(e=>e.date === selDate);
+            let availability = user.available.filter(e => e.date === selDate);
 
-            if(availability.length > 0) {
-                setListHours( availability[0].hours );
+            if (availability.length > 0) {
+                setListHours(availability[0].hours);
+            } else {
+                setListHours([]); // Adicionar isto para garantir que a lista de horas seja limpa
             }
         }
         setSelectedHour(null);
-
-    },[user, selectedDay]);
+    }, [user, selectedDay]);
 
     useEffect(()=>{
         let today = new Date();
-        setSelectedYear( today.getFullYear() );
-        setSelectedMonth( today.getMonth() );
-        setSelectedDay( today.getDate() );
+        setSelectedYear(today.getFullYear());
+        setSelectedMonth(today.getMonth());
+        setSelectedDay(0);
     }, []);
 
     const handleLeftDateClick = () => {
         let mountDate = new Date(selectedYear, selectedMonth, 1);
-        mountDate.setMonth(mountDate.getMonth() - 1 );
+        mountDate.setMonth(mountDate.getMonth() - 1);
         setSelectedYear(mountDate.getFullYear());
         setSelectedMonth(mountDate.getMonth());
         setSelectedDay(0);
-
+        setListHours([]);
     }
+
     const handleRightDateClick = () => {
         let mountDate = new Date(selectedYear, selectedMonth, 1);
-        mountDate.setMonth(mountDate.getMonth() + 1 );
+        mountDate.setMonth(mountDate.getMonth() + 1);
         setSelectedYear(mountDate.getFullYear());
         setSelectedMonth(mountDate.getMonth());
         setSelectedDay(0);
-        
+        setListHours([]);
     }
 
     const handleCloseButton = () => {
         setShow(false);
     }
 
-    const handleFinishClick = async () => {
-        if(
+   const handleFinishClick = async () => {
+        if (
             user.id &&
             service != null &&
             selectedYear > 0 &&
-            selectedMonth > 0 &&
+            selectedMonth >= 0 &&
             selectedDay > 0 &&
             selectedHour != null
         ) {
             let res = await Api.setAppointment(
                 user.id,
-                service,
+                user.services[service].id,
                 selectedYear,
-                selectedMonth,
+                selectedMonth + 1,
                 selectedDay,
                 selectedHour
             );
-            if(res.error == '') {
+            if (res.error == '') {
                 setShow(false);
                 navigation.navigate('Appointments');
-                
+                // Mostrar o alerta de confirmação
+                Alert.alert(
+                    'Agendamento Confirmado',
+                    'Seu agendamento foi concluído com sucesso!',
+                    [
+                        { text: 'OK', onPress: () => console.log('OK Pressed') }
+                    ],
+                    { cancelable: false }
+                );
+            } else {
+                alert(res.error);
             }
-            setShow(false);
-
         } else {
             alert("Preencha todos os dados");
         }
@@ -300,7 +302,6 @@ export default ({ show, setShow, user, service }) => {
                 <ModalBody>
                     <CloseButton onPress={handleCloseButton}>
                         <ExpandIcon width="40" height="40" fill="#C2995B" />
-
                     </CloseButton>
 
                     <ModalItem>
@@ -320,62 +321,51 @@ export default ({ show, setShow, user, service }) => {
                     <ModalItem>
                         <DateInfo>
                             <DatePrevArea onPress={handleLeftDateClick}>
-                                <NavPrevIcon width="35" heigth="35" fill="#C2995B" />
+                                <NavPrevIcon width="35" height="35" fill="#C2995B" />
                             </DatePrevArea>
                             <DateTitleArea>
                                 <DateTitle>{months[selectedMonth]} {selectedYear}</DateTitle>
-
                             </DateTitleArea>
                             <DateNextArea onPress={handleRightDateClick}>
-                                <NavNextIcon width="35" heigth="35" fill="#C2995B" />
+                                <NavNextIcon width="35" height="35" fill="#C2995B" />
                             </DateNextArea>
                         </DateInfo>
-                        <DateList horizontal={true} showsHorizontalSrollIndicator={false}>
-                            {listDays.map((item, key)=>(
+                        <DateList horizontal={true} showsHorizontalScrollIndicator={false}>
+                            {listDays.map((item, key) => (
                                 <DateItem
                                     key={key}
-                                    onPress={()=>item.status ? setSelectedDay(item.number) : null}
+                                    onPress={() => item.status ? setSelectedDay(item.number) : null}
                                     style={{
-                                        opacity: item.status ? 1 : 0.5,
+                                        opacity: item.status ? 1 : 0.6,
                                         backgroundColor: item.number === selectedDay ? '#C2995B' : '#464a4c'
                                     }}
                                 >
                                     <DateItemWeekDay>{item.weekday}</DateItemWeekDay>
-                                    <DateItemNumber>{item.number}</DateItemNumber>    
-
+                                    <DateItemNumber>{item.number}</DateItemNumber>
                                 </DateItem>
-
                             ))}
-
-
                         </DateList>
                     </ModalItem>
 
                     {selectedDay > 0 && listHours.length > 0 &&
                         <ModalItem>
-                            <TimeList horizontal={true} showsHorizontalSrollIndicator={false}>
-                                {listHours.map((item, key)=>(
+                            <TimeList horizontal={true} showsHorizontalScrollIndicator={false}>
+                                {listHours.map((item, key) => (
                                     <TimeItem
                                         key={key}
-                                        onPress={()=>setSelectedHour(item)}
+                                        onPress={() => setSelectedHour(item)}
                                         style={{
-                                        
-                                        backgroundColor: item.number === selectedHour ? '#C2995B' : '#464a4c'
-                                        }}                                    
+                                            backgroundColor: item === selectedHour ? '#C2995B' : '#464a4c'
+                                        }}
                                     >
                                         <TimeItemText
                                             style={{
                                                 fontWeight: item === selectedHour ? 'bold' : 'normal'
-                                                
                                             }}
-                                        
                                         >{item}</TimeItemText>
-
                                     </TimeItem>
-
                                 ))}
                             </TimeList>
-                            
                         </ModalItem>
                     }
 

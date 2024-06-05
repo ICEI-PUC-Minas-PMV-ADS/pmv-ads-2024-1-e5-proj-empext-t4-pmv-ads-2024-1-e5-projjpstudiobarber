@@ -19,29 +19,27 @@ const StarText = styled.Text`
 `;
 
 export default ({ stars, showNumber }) => {
-    let s = [0, 0, 0, 0, 0];
-    let floor = Math.floor(stars);
-    let left = stars - floor;
+    const starArray = Array(5).fill(0); // Cria um array com 5 elementos inicializados com zero
+    const floorStars = Math.floor(stars);
+    const decimalPart = stars - floorStars;
 
-    for(var i=0;i<floor;i++) {
-        s[i] = 2;
+    for (let i = 0; i < floorStars; i++) {
+        starArray[i] = 2; // Define as estrelas inteiras como cheias (valor 2)
     }
-    if(left > 0) {
-        s[i] = 1;
+    if (decimalPart > 0) {
+        starArray[floorStars] = 1; // Define a estrela parcial como meia (valor 1)
     }
 
     return (
         <StarArea>
-            {s.map((i, k)=>(
-                <StarView key={k}>
-                    {i === 0 && <StarEmpty width="18" height="18" fill="#FF9200" />}
-                    {i === 1 && <StarHalf width="18" height="18" fill="#FF9200" />}
-                    {i === 2 && <StarFull width="18" height="18" fill="#FF9200" />}
+            {starArray.map((type, index) => (
+                <StarView key={index}>
+                    {type === 0 && <StarEmpty width="18" height="18" fill="#FF9200" />}
+                    {type === 1 && <StarHalf width="18" height="18" fill="#FF9200" />}
+                    {type === 2 && <StarFull width="18" height="18" fill="#FF9200" />}
                 </StarView>
             ))}
             {showNumber && <StarText>{stars}</StarText>}
-
         </StarArea>
-
     );
 }

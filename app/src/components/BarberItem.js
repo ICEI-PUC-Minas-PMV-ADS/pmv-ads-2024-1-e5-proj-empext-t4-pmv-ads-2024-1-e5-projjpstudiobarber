@@ -16,12 +16,11 @@ const Avatar = styled.Image`
     width: 88px;
     height: 88px;
     border-radius: 20px;
-
 `;
 
 const InfoArea = styled.View`
     margin-left: 20px;
-    justify-content: space-betwwen;
+    justify-content: space-between; 
 `;
 
 const Username = styled.Text`
@@ -30,19 +29,19 @@ const Username = styled.Text`
 `;
 
 const SeeProfileButton = styled.View`
-    width: 85px;
-    height: 26px;
-    border: 1px solid #C2995B;
+    width: 180px;
+    height: 35px;
+    border: 2px solid #C2995B;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
 `;
 
 const SeeProfileButtonText = styled.Text`
-    font-size: 13px;
+    font-size: 15px;
     color: #C2995B;
+    font-weight: bold;
 `;
-
 
 export default ({data}) => {
     const navigation = useNavigation();
@@ -65,10 +64,9 @@ export default ({data}) => {
                 <Stars stars={data.stars} showNumber={true} />
 
                 <SeeProfileButton>
-                    <SeeProfileButtonText>Ver Perfil</SeeProfileButtonText>
+                    <SeeProfileButtonText>Ver Perfil e Agendar</SeeProfileButtonText>
                 </SeeProfileButton>
             </InfoArea>
         </Area>
-
     );
 }

@@ -1,4 +1,26 @@
-import React, { useState, useEffect } from 'react';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React, { useState, useEffect } from 'react';
 import { Container, InputArea, Title, Appointment } from './styles';
 import { View } from "react-native";
 import moment from 'moment-timezone';
@@ -76,4 +98,4 @@ export default () => {
             </InputArea>
         </Container>
     );
-}
+}*/

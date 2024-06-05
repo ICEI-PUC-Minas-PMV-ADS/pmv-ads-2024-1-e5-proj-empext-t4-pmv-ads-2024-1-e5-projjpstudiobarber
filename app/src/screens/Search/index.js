@@ -6,7 +6,7 @@ export default () => {
     return (
         <Container>
             <Text color="#FFFFFF">
-                SEARCH
+                Pagina em construção
             </Text>
         </Container>
     );
