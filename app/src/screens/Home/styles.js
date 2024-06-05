@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-    flex: 1;
     background-color: #000000;
+    flex: 1;
+    justify-content: center;
+    align-items: center;  
 `;
 
 export const Scroller = styled.ScrollView`
@@ -17,14 +19,15 @@ export const HeaderArea = styled.View`
     align-items: center;
 `;
 export const HeaderTitle = styled.Text`
-    width:  340px;
+    width:  300px;
     font-size: 24px;
     font-weight: bold;
     color: #F6E9C3;
+    text-align: center;
 `;
 export const SearchButton = styled.TouchableOpacity`
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
 `;
 
 export const LocationArea = styled.View`
@@ -47,6 +50,6 @@ export const LocationFinder = styled.TouchableOpacity`
     height: 24px;
 `;
 export const ListArea = styled.View`
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 `;

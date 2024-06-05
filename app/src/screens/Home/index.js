@@ -21,8 +21,6 @@ export default () => {
     const [refreshing, setRefreshing] = useState(false);
 
     const getBarbers = async () => {
-        setLoading(true);
-        setList([]);
 
         let res = await Api.getBarbers();
         if (res.error == '') {
@@ -33,8 +31,6 @@ export default () => {
         } else {
             alert("Erro: " + res.error);
         }
-
-        setLoading(false);
     }
 
     useEffect(() => {

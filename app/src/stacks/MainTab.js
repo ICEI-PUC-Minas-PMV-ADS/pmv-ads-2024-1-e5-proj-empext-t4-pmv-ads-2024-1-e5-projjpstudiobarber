@@ -1,7 +1,7 @@
-import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import CustomTabBar from "../components/CustomTabBar";
+import CustomTabBar from '../components/CustomTabBar';
 
 import Home from '../screens/Home';
 import Search from '../screens/Search';
@@ -31,5 +31,5 @@ export default () => (
         <Tab.Screen name="Appointments" component={Home} />
         <Tab.Screen name="Favorites" component={Favorites} />
         <Tab.Screen name="Profile" component={Profile} />
-    </Tab.Navigator>    
+    </Tab.Navigator>
 );
