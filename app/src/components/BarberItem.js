@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components/native';
+import React from "react";
+import styled from "styled-components/native";
+import { useNavigation } from '@react-navigation/native';
 
 import Stars from '../components/Stars';
 
@@ -13,7 +14,7 @@ const Area = styled.TouchableOpacity`
 
 const Avatar = styled.Image`
     width: 88px;
-    height: 108px;
+    height: 88px;
     border-radius: 20px;
 `;
 
@@ -22,7 +23,7 @@ const InfoArea = styled.View`
     justify-content: space-between; 
 `;
 
-const UserName = styled.Text`
+const Username = styled.Text`
     font-size: 17px;
     font-weight: bold;
 `;
@@ -43,11 +44,22 @@ const SeeProfileButtonText = styled.Text`
 `;
 
 export default ({data}) => {
+    const navigation = useNavigation();
+
+    const handleClick = () => {
+        navigation.navigate('Barber', {
+            id: data.id,
+            avatar: data.avatar,
+            name: data.name,
+            stars: data.stars,
+        });
+    }
+
     return (
-        <Area>
-            <Avatar source={{uri: data.avatar}} />
+        <Area onPress={handleClick}>
+            <Avatar source={{uri: data.avatar}}/>
             <InfoArea>
-                <UserName>{data.name}</UserName>
+                <Username>{data.name}</Username>
 
                 <Stars stars={data.stars} showNumber={true} />
 
