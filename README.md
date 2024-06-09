@@ -66,8 +66,9 @@ Para rodar a aplicação
 <li><a href="docs/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
 <li><a href="docs/02-Especificação do Projeto.md"> Especificação do Projeto</a></li>
 <li><a href="docs/03-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="docs/04-Testes de Software.md"> Testes de Software</a></li>
-<li><a href="docs/05-Implantação.md"> Implantação</a></li>
+<li><a href="docs/04-Plano de Testes de Software.md">Plano de Testes de Software</a></li>
+<li><a href="docs/05-Registro de Teste de Software.md">Registro de Testes de Software</a></li>
+<li><a href="docs/06-Implantação.md"> Implantação</a></li>
 </ol>
 
 # Código
