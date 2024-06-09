@@ -47,9 +47,20 @@ const DateText = styled.Text`
     border-radius: 10px;
     background-color: #C2995B;
 `;
+export const HeaderArea = styled.View`    
+    height: 50px;
+    justify-content: center;
+    padding: 0 20px;
+`;
+
+export const HeaderTitle = styled.Text`
+    font-size: 18px;
+    color: #F6E9C3;
+    font-weight: bold;
+`;
 
 export default ({data}) => {
-    
+
     let d = data.datetime.split(' ');
 
     let time = d[1].substring(0,5);
@@ -57,8 +68,8 @@ export default ({data}) => {
     let date = new Date(d[0]);
     let year = date.getFullYear();
     let month = date.getMonth() + 1;
-    let day = date.getDate() +1;
-
+    let day = date.getDate() ;
+    //let day = date.getDate() +1 ;
     month = month < 10 ? '0'+month : month;
     day = day < 10 ? '0'+day : day;
     let dateString = `${day}/${month}/${year}`;
@@ -67,7 +78,8 @@ export default ({data}) => {
 
 
     return (
-        <Area>            
+        <Area>
+                   
             <UserArea>
                 <Avatar source={{uri: data.barber.avatar}} />                
                 <Username>{data.barber.name}</Username>

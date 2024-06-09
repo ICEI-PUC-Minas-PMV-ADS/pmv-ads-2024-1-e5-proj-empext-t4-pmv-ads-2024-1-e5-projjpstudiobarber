@@ -1,11 +1,13 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { RefreshControl } from "react-native";
-import { 
+import {
     Container,
     Scroller,
+    HeaderArea,
+    HeaderTitle,
     ListArea,
     EmptyWarning
- } from './styles';
+} from './styles';
 
 import AppointmentItem from "../../components/AppointmentItem";
 import Api from "../../Api";
@@ -16,7 +18,7 @@ export default () => {
     const [loading, setLoading] = useState(false);
     const [list, setList] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         getAppointments();
     }, []);
 
@@ -25,10 +27,10 @@ export default () => {
         setList([]);
 
         let res = await Api.getAppointments();
-        if(res.error == '') {
+        if (res.error == '') {
             setList(res.list);
         } else {
-            alert("Erro: "+res.error);
+            alert("Erro: " + res.error);
         }
 
         setLoading(false);
@@ -37,19 +39,25 @@ export default () => {
     return (
         <Container>
 
+
+
             <Scroller refreshControl={
                 <RefreshControl refreshing={loading} onRefresh={getAppointments} />
             }>
+                
 
                 {!loading && list.length === 0 &&
-                    <EmptyWarning>Não há favoritos.</EmptyWarning>
+                    <EmptyWarning>Não há agendamentos.</EmptyWarning>
                 }
+                <HeaderArea>
+                    <HeaderTitle>Meus Agendamentos</HeaderTitle>
+                </HeaderArea>
 
                 <ListArea>
-                {list.map((item, k)=>(
+                    {list.map((item, k) => (
                         <AppointmentItem key={k} data={item} />
-                    ))}                            
-                </ListArea>            
+                    ))}
+                </ListArea>
             </Scroller>
         </Container>
     );

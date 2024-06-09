@@ -39,7 +39,7 @@ export default () => {
         <Container>
 
             <HeaderArea>
-                <HeaderTitle>Favoritos</HeaderTitle>
+                <HeaderTitle>Meus Favoritos</HeaderTitle>
             </HeaderArea>
             
             <Scroller refreshControl={

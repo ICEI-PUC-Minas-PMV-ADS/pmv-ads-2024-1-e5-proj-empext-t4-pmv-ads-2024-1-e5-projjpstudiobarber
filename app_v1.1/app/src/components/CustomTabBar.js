@@ -4,8 +4,8 @@ import styled from "styled-components/native";
 import { UserContext } from '../contexts/UserContext';
 
 import HomeIcon from '../logos/home.svg';
-import SearchIcon from '../logos/search.svg';
-import TodayIcon from '../logos/today.svg';
+import SearchIcon from '../logos/today.svg';
+import TodayIcon from '../logos/jpsbarber.svg';
 import FavoriteIcon from '../logos/favorite.svg';
 import AccountIcon from '../logos/account.svg';
 

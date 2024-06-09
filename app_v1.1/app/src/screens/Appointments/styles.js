@@ -12,7 +12,7 @@ export const Scroller = styled.ScrollView`
 
 export const ListArea = styled.View`
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 `;
 
 export const EmptyWarning = styled.Text`
@@ -20,4 +20,15 @@ export const EmptyWarning = styled.Text`
     margin-top: 30px;
     color: #FFFFFF;
     font-size: 14px;
+`;
+export const HeaderArea = styled.View`    
+    height: 50px;
+    justify-content: center;
+    padding: 0 20px;
+`;
+
+export const HeaderTitle = styled.Text`
+    font-size: 18px;
+    color: #F6E9C3;
+    font-weight: bold;
 `;
