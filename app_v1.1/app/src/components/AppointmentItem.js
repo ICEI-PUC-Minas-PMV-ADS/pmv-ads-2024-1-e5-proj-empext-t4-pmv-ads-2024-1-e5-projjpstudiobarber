@@ -1,13 +1,13 @@
-{/*
-import React from 'react';
-import styled from 'styled-components/native';
+import React from "react";
+import styled from "styled-components/native";
 
 const Area = styled.View`
     background-color: #FFFFFF;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 20px;     
 `;
+
 const UserArea = styled.View`
     flex: 1;
     flex-direction: row;
@@ -19,11 +19,13 @@ const Avatar = styled.Image`
     border-radius: 20px;
     margin-right: 20px;
 `;
-const UserName = styled.Text`
+
+const Username = styled.Text`
     font-size: 18px;
     font-weight: bold;
-    color: #000000;
+    color: #000000; 
 `;
+
 const SplitArea = styled.View`
     flex-direction: row;
     justify-content: space-between;
@@ -40,31 +42,32 @@ const DateText = styled.Text`
     color: #FFFFFF;
     padding: 10px 15px;
     border-radius: 10px;
-    background-color: #4EADBE;
+    background-color: #C2995B;
 `;
 
 export default ({data}) => {
-
+    
     let d = data.datetime.split(' ');
 
-    // Tempo
     let time = d[1].substring(0,5);
 
-    // Data
     let date = new Date(d[0]);
     let year = date.getFullYear();
     let month = date.getMonth() + 1;
-    let day = date.getDate();
+    let day = date.getDate() +1;
 
     month = month < 10 ? '0'+month : month;
     day = day < 10 ? '0'+day : day;
     let dateString = `${day}/${month}/${year}`;
 
+
+
+
     return (
-        <Area>
+        <Area>            
             <UserArea>
-                <Avatar source={{uri: data.barber.avatar}} />
-                <UserName>{data.barber.name}</UserName>
+                <Avatar source={{uri: data.barber.avatar}} />                
+                <Username>{data.barber.name}</Username>
             </UserArea>
 
             <SplitArea>
@@ -75,8 +78,7 @@ export default ({data}) => {
             <SplitArea>
                 <DateText>{dateString}</DateText>
                 <DateText>{time}</DateText>
-            </SplitArea>
+            </SplitArea>            
         </Area>
     );
 }
-    */}
