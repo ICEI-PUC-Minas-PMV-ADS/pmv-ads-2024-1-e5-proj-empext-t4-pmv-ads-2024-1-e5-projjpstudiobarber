@@ -1,15 +1,15 @@
-import React, {useState, useEffect } from "react";
-import { RefreshControl } from "react-native";
-import { 
+{/*
+import React, { useState, useEffect } from 'react';
+import { RefreshControl } from 'react-native';
+import {
     Container,
     Scroller,
     ListArea,
     EmptyWarning
- } from './styles';
+} from './styles';
 
-import AppointmentItem from "../../components/AppointmentItem";
-import Api from "../../Api";
-
+import AppointmentItem from '../../components/AppointmentItem';
+import Api from '../../Api';
 
 export default () => {
 
@@ -42,15 +42,17 @@ export default () => {
             }>
 
                 {!loading && list.length === 0 &&
-                    <EmptyWarning>Não há favoritos.</EmptyWarning>
+                    <EmptyWarning>Não há agendamentos.</EmptyWarning>
                 }
 
                 <ListArea>
-                {list.map((item, k)=>(
+                    {list.map((item, k)=>(
                         <AppointmentItem key={k} data={item} />
-                    ))}                            
-                </ListArea>            
+                    ))}
+                </ListArea>
             </Scroller>
+
         </Container>
     );
 }
+    */}

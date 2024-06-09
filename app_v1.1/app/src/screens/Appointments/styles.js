@@ -1,13 +1,14 @@
-import styled from 'styled-components/native';
+{/*
+    import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-    background-color: #000000;
-    flex: 1; 
+    flex: 1;
+    background-color: #63C2D1;
 `;
 
 export const Scroller = styled.ScrollView`
     flex: 1;
-    padding: 0px 20px;
+    padding: 0 20px;
 `;
 
 export const ListArea = styled.View`
@@ -21,3 +22,4 @@ export const EmptyWarning = styled.Text`
     color: #FFFFFF;
     font-size: 14px;
 `;
+*/}
