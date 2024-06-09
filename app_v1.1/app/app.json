@@ -3,7 +3,7 @@
     "name": "app",
     "slug": "app",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "portrait",   
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -21,16 +21,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.markline.app"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "b8521287-9107-49e7-a233-f41850549c4e"
-      }
     }
   }
 }

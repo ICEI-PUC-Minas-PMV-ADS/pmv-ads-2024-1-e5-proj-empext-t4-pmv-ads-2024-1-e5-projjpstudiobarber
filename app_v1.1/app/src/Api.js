@@ -4,7 +4,8 @@ import { add } from 'react-native-reanimated';
 //API na Nuvem
 const BASE_API = 'https://jpstudio-app-c7p55.ondigitalocean.app/api';
 
-
+//API Local via XAMPP
+//const BASE_API = 'http://10.0.2.2:8000/api';
 
 export default {
     checkToken: async (token) => {
@@ -58,7 +59,9 @@ export default {
         return json;
     },
     getBarbers: async () => {
-        const token = await AsyncStorage.getItem('token');      
+        const token = await AsyncStorage.getItem('token');
+
+      
 
         const req = await fetch(`${BASE_API}/barbers?token=${token}`);
         const json = await req.json();
@@ -122,8 +125,7 @@ export default {
         const req = await fetch(`${BASE_API}/user/favorites?token=${token}`);
         const json = await req.json();
         return json;
-    }, 
-    
+    },
     getAppointments: async () => {
         const token = await AsyncStorage.getItem('token');
         const req = await fetch(`${BASE_API}/user/appointments?token=${token}`);
@@ -142,29 +144,7 @@ export default {
             },
             body: JSON.stringify(body)
         });
-        const json = await req.json();
-        return json;
-    },
-    getUser: async () => {
-        const token = await AsyncStorage.getItem('token');
-        const req = await fetch(`${BASE_API}/user`, {
-            method: 'GET',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
-            }
-        });
-        const json = await req.json();
+        const json = await req.json();        
         return json;
     },
 };
-
-{/*
-AppRegistry.updateUser({
-    name: 'Novo nome',
-    email: 'novoemail@email.com',
-    password: '1234',
-    password_confirm: '1234'
-})
-    */}

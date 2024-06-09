@@ -37,7 +37,7 @@ export const SwipeImage = styled.Image`
 `;
 
 export const FakeSwiper = styled.View`
-    height: 200px;
+    height: 240px;
     background-color: #141416;
 `;
 
@@ -89,7 +89,7 @@ export const UserFavButton = styled.TouchableOpacity`
 `;
 
 export const ServiceArea = styled.View`
-    margin-top: 40px;
+    margin-top: 30px;
 `;
 
 export const ServicesTitle = styled.Text`
