@@ -1,10 +1,39 @@
-import React from 'react';
 import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
-    background-color: #464a4c;
     flex: 1;
+    background-color: #141416;
+`;
+
+export const HeaderArea = styled.View`
+    height: 50px;
     justify-content: center;
-    align-items: center;  
-    
+    padding: 0 20px;
+`;
+
+export const HeaderTitle = styled.Text`
+    font-size: 18px;
+    color: #C2995B;
+    font-weight: bold;
+`;
+
+export const Scroller = styled.ScrollView`
+    flex: 1;
+    padding: 0 20px;
+`;
+
+export const LoadingIcon = styled.ActivityIndicator`
+    margin-top: 30px;
+`;
+
+export const ListArea = styled.View`
+    margin-top: 20px;
+    margin-bottom: 20px;
+`;
+
+export const EmptyWarning = styled.Text`
+    text-align: center;
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
 `;

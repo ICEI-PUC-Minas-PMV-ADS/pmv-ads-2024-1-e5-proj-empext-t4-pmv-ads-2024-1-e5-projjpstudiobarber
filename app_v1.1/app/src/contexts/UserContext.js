@@ -1,6 +1,4 @@
-import React from 'react';
-import { useReducer } from 'react';
-import { createContext } from 'react';
+import React, { createContext, useReducer } from 'react';
 import { initialState, UserReducer } from '../reducers/UserReducer';
 
 export const UserContext = createContext();
@@ -13,5 +11,4 @@ export default ({children}) => {
             {children}
         </UserContext.Provider>
     );
-
 }
