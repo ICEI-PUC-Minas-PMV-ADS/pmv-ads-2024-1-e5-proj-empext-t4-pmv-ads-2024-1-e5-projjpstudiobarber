@@ -7,7 +7,8 @@ import {
     HeaderArea,
     HeaderTitle,
     SearchButton,
-    ListArea
+    ListArea,
+    LoadingIcon
 } from './styles';
 import BarberItem from '../../components/BarberItem';
 import SearchIcon from '../../logos/search.svg';
@@ -16,7 +17,7 @@ import { useNavigation } from "@react-navigation/native";
 export default () => {
     const navigation = useNavigation();
     const [list, setList] = useState([]);
-    const [locationText, setLocationText] = useState('');
+    //const [locationText, setLocationText] = useState('');
     const [loading, setLoading] = useState(false);
     const [refreshing, setRefreshing] = useState(false);
 
@@ -25,8 +26,9 @@ export default () => {
         setList([]);
 
         let res = await Api.getBarbers();
+        //console.log(res);
         if (res.error == '') {
-            if (res.loc) {
+            if (0) {
                 //setLocationText(res.loc);
             }
             setList(res.data);
