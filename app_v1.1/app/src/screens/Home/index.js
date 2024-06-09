@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { RefreshControl } from 'react-native';
+import React, {  useState, useEffect } from "react";
+import { RefreshControl, Text } from 'react-native';
 import Api from "../../Api";
 import {
     Container,
@@ -8,7 +8,7 @@ import {
     HeaderTitle,
     SearchButton,
     ListArea,
-    LoadingIcon
+    Subtitle
 } from './styles';
 import BarberItem from '../../components/BarberItem';
 import SearchIcon from '../../logos/search.svg';
@@ -54,8 +54,10 @@ export default () => {
                 <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
             }>
                 <HeaderArea>
-                    <HeaderTitle numberOfLines={2}>Olá, seja bem vindo(a)!</HeaderTitle>
+                    <HeaderTitle numberOfLines={2}>Realize o seu Agendamento.</HeaderTitle>
+                    
                     <SearchButton onPress={() => navigation.navigate('Search')}>
+                   
                         <SearchIcon
                             width="26"
                             height="26"
@@ -63,7 +65,9 @@ export default () => {
                             pointerEvents="none" // Impede eventos de clique no ícone
                         />
                     </SearchButton>
+                    
                 </HeaderArea>
+                <Subtitle>*Clique em Ver Perfil e Agendar</Subtitle>
                 <ListArea>
                     {list.length > 0 && (
                         <BarberItem

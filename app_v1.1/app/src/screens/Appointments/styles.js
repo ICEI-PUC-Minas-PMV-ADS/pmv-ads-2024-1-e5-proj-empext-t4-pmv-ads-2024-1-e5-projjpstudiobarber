@@ -1,44 +1,34 @@
 import styled from 'styled-components/native';
-import { Dimensions } from 'react-native';
 
 export const Container = styled.SafeAreaView`
-    min-height: ${Dimensions.get('window').height}px;
-    background-color: #141416;
+    background-color: #000000;
+    flex: 1; 
 `;
 
-export const Title = styled.Text`
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 30px;
+export const Scroller = styled.ScrollView`
+    flex: 1;
+    padding: 0px 20px;
+`;
+
+export const ListArea = styled.View`
+    margin-top: 20px;
+    margin-bottom: 30px;
+`;
+
+export const EmptyWarning = styled.Text`
     text-align: center;
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+`;
+export const HeaderArea = styled.View`    
+    height: 50px;
+    justify-content: center;
+    padding: 0 20px;
 `;
 
-export const InputArea = styled.View`
-    width: 80%;
-    margin: 0 auto;
-    align-items: center;
-    gap: 20px;
-`;
-
-export const Appointment = styled.View`
-    min-width: 100%;
-    background-color: #292a2c;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-`;
-
-Appointment.Title = styled.Text`
-    color: #fff;
+export const HeaderTitle = styled.Text`
     font-size: 18px;
+    color: #F6E9C3;
     font-weight: bold;
-    margin-bottom: 10px;
-`;
-
-Appointment.Text = styled.Text`
-    color: #fff;
-    font-size: 16px;
 `;

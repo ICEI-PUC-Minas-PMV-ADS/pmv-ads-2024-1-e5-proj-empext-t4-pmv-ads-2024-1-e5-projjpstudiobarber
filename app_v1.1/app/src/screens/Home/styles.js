@@ -53,3 +53,9 @@ export const ListArea = styled.View`
 export const LoadingIcon = styled.ActivityIndicator`
     margin-top: 50px;   
 `;
+export const Subtitle = styled.Text`
+    width:  220px;
+    font-size: 12px;
+    
+    color: #F6E9C3;
+`;

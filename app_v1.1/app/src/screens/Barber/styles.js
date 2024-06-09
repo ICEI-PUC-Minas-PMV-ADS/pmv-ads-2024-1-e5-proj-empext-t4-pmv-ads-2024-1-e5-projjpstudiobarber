@@ -37,7 +37,7 @@ export const SwipeImage = styled.Image`
 `;
 
 export const FakeSwiper = styled.View`
-    height: 240px;
+    height: 200px;
     background-color: #141416;
 `;
 
@@ -89,7 +89,7 @@ export const UserFavButton = styled.TouchableOpacity`
 `;
 
 export const ServiceArea = styled.View`
-    margin-top: 30px;
+    margin-top: 40px;
 `;
 
 export const ServicesTitle = styled.Text`
@@ -178,4 +178,3 @@ export const LoadingIcon =  styled.ActivityIndicator`
     margin-top: 50px;
     color: #C2995B;
 `;
-

@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import CustomTabBar from "../components/CustomTabBar";
 
 import Home from '../screens/Home';
+import Home2 from '../screens/Home2';
 import Search from '../screens/Search';
 import Appointments from '../screens/Home';
 import Favorites from '../screens/Favorites';
@@ -26,7 +27,7 @@ export default () => (
     tabBar={props => <CustomTabBar {...props} />}
 >
      
-        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Home" component={Home2} />
         <Tab.Screen name="Search" component={Search} />
         <Tab.Screen name="Appointments" component={Home} />
         <Tab.Screen name="Favorites" component={Favorites} />
