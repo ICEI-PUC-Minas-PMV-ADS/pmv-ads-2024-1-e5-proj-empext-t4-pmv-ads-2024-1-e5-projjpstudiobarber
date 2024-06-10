@@ -1,8 +1,6 @@
 # Evidências de Testes de Software
 
-## FRONT-END
-
-### 02 - Login/Cadastro
+## APLICAÇÃO (FRONT/BACK END)
 
 #### **2.1 - Verificar se a exbição da tela de login está correta**
 
@@ -59,8 +57,6 @@
 ##### Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente.
 
 ## API
-
-### 01 - Login/Cadastro
 
 #### **1. - Verificar se o fornecendo os parâmetros corretos o usuário é cadastrado**
 
