@@ -45,9 +45,14 @@
 ##### Figura 09 - Tela de agendamento validando disponibilidade de datas.
 
 
+
+
+
+
 #### **2.5 - Verificar se a funcionalidade de favoritar o barbeiro está funcionando corretamente**
 
-<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/41669228-f4d9-4860-ad2c-3cc1b2a64390">  </video> 
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/41669228-f4d9-4860-ad2c-3cc1b2a64390">  </video>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101147762/f1d42f92-4e92-4ebf-b5bc-74363be1bbde">  </video> 
 ##### Figura 10 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.
 
 
