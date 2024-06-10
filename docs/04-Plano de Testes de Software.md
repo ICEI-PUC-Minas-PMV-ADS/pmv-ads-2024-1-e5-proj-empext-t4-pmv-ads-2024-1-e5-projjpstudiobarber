@@ -62,15 +62,4 @@
 - Passos: Após realizar acesso ao sistema, de forma local, navegar até a pagina do perfil, selecionar o serviço, a data e o horario desejados.
 - Critério: Exibição dos dados corretos selecionados para o agendamento.
 
-### 3 Agendamento de serviços
 
-#### **3.1 - Verificar se é possível realizar o agendamento de um seriço**
-
-- Objetivo: Garantir que a funcionalidade de cadastro de serviço é feita de maneira correta.
-- Passos:
-    1) Realizar acesso ao sistema de forma local,
-    2) Clicar em "Iniciar Agendamento",
-    3) Selecionar o profissional desejado,
-	4) Selecionar a data e horário desejados e clicar em "Finalizar agendamento,
-    5) Aguardar o retorno da mensagem de confirmação.
-- Critério: Fazer a escolha dos dados necessários para realizar o agendmento do serviço e retorno de mensagem confirmando o agendamento.
