@@ -109,3 +109,13 @@
         width="203" height="436">
     <figcaption>Figura 11 - Tela de evidência exibição do perfil 04.</figcaption>
 </figure>
+
+### 3 - Agendamento
+
+#### **3.1 - Verificar se o modal de agendamento está mostrando a data e os horários disponíveis**
+
+<figure>
+    <img src="img/Testes/Print-Agenda3.1.png" alt="exibição de horarios disponiveis"
+        width="203" height="436">
+    <figcaption>Figura 12 - Tela de evidência exibição de horarios disponiveis.</figcaption>
+</figure>
