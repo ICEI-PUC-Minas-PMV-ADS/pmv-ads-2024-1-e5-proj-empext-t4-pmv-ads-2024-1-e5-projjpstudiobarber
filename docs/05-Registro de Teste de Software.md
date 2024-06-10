@@ -61,7 +61,7 @@
 #### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
 
 <figure>
-    <img src="img/Testes/Print-Agenda.jpeg" alt="exibição da tela de perfil"
+    <img src="img/Perfil.jpeg" alt="exibição da tela de perfil"
         width="203" height="436">
     <figcaption>Figura 06 - Tela de evidência exibição da tela de perfil.</figcaption>
 </figure>
@@ -71,7 +71,7 @@
 #### **2.4 - Verificar se a tela do barbeiro está retornando os serviços e valores corretamente**
 
 <figure>
-    <img src="img/Testes/Print-Perfil1.jpeg" alt="exibição do perfil do barbeiro"
+    <img src="img/lista-services.jpeg" alt="exibição do perfil do barbeiro"
         width="203" height="436">
     <figcaption>Figura 07 - Tela de evidência exibição do perfil do barbeiro.</figcaption>
 </figure>
@@ -86,26 +86,66 @@
     <figcaption>Figura 08 - Tela de evidência exibição do perfil 01.</figcaption>
 </figure>
 
-###### **2.4.1.2 - Perfil 02**
+###### **3.1 - Tela Home**
 
 <figure>
-    <img src="img/Testes/Print_Perfil3.jpeg" alt="exibição perfil-02"
+    <img src="img/home.jpeg" alt="exibição Home-01"
         width="203" height="436">
-    <figcaption>Figura 09 - Tela de evidência exibição do perfil 02.</figcaption>
+    <figcaption>Figura 08 - Tela de evidência exibição do Home.</figcaption>
 </figure>
 
-###### **2.4.1.3 - Perfil 03**
+###### **4.1 - Tela Meus agendamentos**
 
 <figure>
-    <img src="img/Testes/Print-Perfil4.jpeg" alt="exibição perfil-03"
+    <img src="img/agendamento.jpeg" alt="exibição tela de agendamento do serviços"
         width="203" height="436">
-    <figcaption>Figura 10 - Tela de evidência exibição do perfil 03.</figcaption>
+    <figcaption>Figura 08 - Tela de evidência exibição do Agendamento.</figcaption>
 </figure>
 
-###### **2.4.1.4 - Perfil 04**
+###### **5.1 - Tela Lista de serviços**
 
 <figure>
-    <img src="img/Testes/Print-Perfil5.jpeg" alt="exibição perfil-04"
+    <img src="img/lista-services.jpeg" alt="exibição tela com lista serviços"
         width="203" height="436">
-    <figcaption>Figura 11 - Tela de evidência exibição do perfil 04.</figcaption>
+    <figcaption>Figura 08 - Tela de evidência exibição do Lista de serviços.</figcaption>
+</figure>
+
+###### **5.1 - Tela Lista de serviços**
+
+<figure>
+    <img src="img/lista-services.jpeg" alt="exibição tela com lista serviços"
+        width="203" height="436">
+    <figcaption>Figura 08 - Tela de evidência exibição do Lista de serviços.</figcaption>
+</figure>
+
+###### **5.1.1 - Tela Lista de horarios disponiveis**
+
+<figure>
+    <img src="img/selec-services.jpeg" alt="exibição tela com lista horarios disponiveis"
+        width="203" height="436">
+    <figcaption>Figura 08 - Tela de evidência exibição do Lista de horarios.</figcaption>
+</figure>
+
+###### **5.1.2 - Tela agendamento confirmado**
+
+<figure>
+    <img src="img/agen-confirmado.jpeg" alt="exibição tela com a confirmação de horario"
+        width="203" height="436">
+    <figcaption>Figura 08 - Tela de evidência exibição do confirmação de horarios.</figcaption>
+</figure>
+
+###### **5.1.2 - Tela agendamento confirmado**
+
+<figure>
+    <img src="img/favoritos.jpeg" alt="exibição tela de favoritos"
+        width="203" height="436">
+    <figcaption>Figura 08 - Tela de evidência exibição de Favoritos.</figcaption>
+</figure>
+
+###### **6.1 - Tela agendamento Perfil**
+
+<figure>
+    <img src="img/Perfil.jpeg" alt="exibição tela de perfil de usuario"
+        width="203" height="436">
+    <figcaption>Figura 08 - Tela de evidência exibição de perfil.</figcaption>
 </figure>
