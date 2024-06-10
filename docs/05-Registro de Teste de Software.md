@@ -5,12 +5,21 @@
 #### **2.1 - Verificar se a exbição da tela de login está correta**
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/74828af9-0110-4ac4-ab49-39903e1f20c5">  </video>
+[Evidência - Gabriel] https://vimeo.com/955698408?share=copy
+
 ##### Figura 04 - Tela de evidência exibição da tela de login.
 
 
 #### **2.1.1 - Verificar se a exbição da tela de login verifica os dados inseridos**
 
+
+
+
+
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/7150b516-9c2b-4e69-b806-02403265937c">  </video>    
+
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/e69fd19e-fe15-46ab-a99a-e174c303e3dd">  </video>  
+
 #####  Figura 05 - Tela de evidência exibição da tela de login validando dados.
 
 
@@ -26,7 +35,8 @@
 
 ### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
 
-<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/b0857d07-1b92-49cf-b514-62ae0ea2d3f1">  </video>    
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/b0857d07-1b92-49cf-b514-62ae0ea2d3f1">  </video>   [Evidência - Gabriel] https://vimeo.com/955702693?share=copy
+
 ##### Figura 08 - Tela de evidência exibição da tela do perfil com atualização de dados.
 
 #### **2.4 - Verificar se a tela do barbeiro está retornando os serviços e valores corretamente**
@@ -35,9 +45,14 @@
 ##### Figura 09 - Tela de agendamento validando disponibilidade de datas.
 
 
+
+
+
+
 #### **2.5 - Verificar se a funcionalidade de favoritar o barbeiro está funcionando corretamente**
 
-<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/41669228-f4d9-4860-ad2c-3cc1b2a64390">  </video> 
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/41669228-f4d9-4860-ad2c-3cc1b2a64390">  </video>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101147762/f1d42f92-4e92-4ebf-b5bc-74363be1bbde">  </video> 
 ##### Figura 10 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.
 
 
@@ -54,6 +69,8 @@
 #### **2.8 - Verificar se a tela de historico apresenta os agendamentos realizados pelo cliente**
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/d76f1c50-91d6-49ce-abe3-be193a782658">  </video>
+[Evidência - Gabriel] https://vimeo.com/955702497?share=copy
+
 ##### Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente.
 
 ## API
@@ -169,4 +186,48 @@
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/9-requsicao-barbers.png" alt="" width="900" height="600">
     <figcaption>Figura 09 - Listagem dos barbeiros cadastrados.</figcaption>
+</figure>
+
+### **6 - Agendamento de serviços**
+
+#### **6.1 - Verificar se é possível realizar o agendamento de um seriço**
+
+1) Realizar acesso ao sistema de forma local
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/Teste de agendamento de servico/01 - Passo 01 - Login no app.png" alt="Tela de Login"
+        width="900" height="600">
+    <figcaption>Figura 14 - Login no sistema.</figcaption>
+</figure>
+
+2) Clicar em "Iniciar Agendamento"
+
+   <figure>
+    <img src="img/Testes/Registros de testes jun24/Teste de agendamento de servico/02 - Passo 02 - Iniciando um agendamento.png" alt="Iniciando um agendamento"
+        width="900" height="600">
+    <figcaption>Figura 15 - Iniciar agendamento.</figcaption>
+</figure>
+
+3) Selecionar o profissional desejado
+
+   <figure>
+    <img src="img/Testes/Registros de testes jun24/Teste de agendamento de servico/03 - Passo 03 - Localizar o barbeiro de preferencia.png" alt="Selecionar barbeiro"
+        width="900" height="600">
+    <figcaption>Figura 16 - Selecionar barbeiro.</figcaption>
+</figure>
+
+4) Selecionar a data e horário desejados e clicar em "Finalizar agendamento,
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/Teste de agendamento de servico/04 - Passo 04 - Localizar o serviço desejado.png" alt="Localizar serviço desejado"
+        width="900" height="600">
+    <figcaption>Figura 17 - Localizar serviço desejado.</figcaption>
+</figure>
+
+5) Aguardar o retorno da mensagem de confirmação.
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/Teste de agendamento de servico/06 - Passo 06 - Mensagem de confirmação.png" alt="Mensagem de confirmação"
+        width="900" height="600">
+    <figcaption>Figura 18 - Mensagem de Confirmação.</figcaption>
 </figure>
