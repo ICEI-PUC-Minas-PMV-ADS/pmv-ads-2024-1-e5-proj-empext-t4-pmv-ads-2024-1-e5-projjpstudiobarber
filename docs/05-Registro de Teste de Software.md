@@ -125,7 +125,7 @@
 <figure>
     <img src="img/Testes/Print-Agenda3.2.png" alt="exibição da mensagem de confirmação do agendamento"
         width="203" height="436">
-    <figcaption>Figura 12 - Tela de evidência exibição da mensagem de confirmação do agendamento.</figcaption>
+    <figcaption>Figura 13 - Tela de evidência exibição da mensagem de confirmação do agendamento.</figcaption>
 </figure>
 
 #### **3.3 - Verificar se o agendamento realizado consta registrado na tela de agendamentos**
@@ -133,5 +133,5 @@
 <figure>
     <img src="img/Testes/Print-Agenda3.3.png" alt="exibição de registro do agendamento feito na tela de agendamentos"
         width="203" height="436">
-    <figcaption>Figura 12 - Tela de evidência exibição do registro na tela de agendamentos.</figcaption>
+    <figcaption>Figura 14 - Tela de evidência exibição do registro na tela de agendamentos.</figcaption>
 </figure>
