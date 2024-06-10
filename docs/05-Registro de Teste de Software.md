@@ -46,8 +46,8 @@
 
 <figure>    
     <video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.1 - 2.2 - Cadastro e Login.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    <source src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/blob/dev/docs/img/Testes/Registros%20de%20testes%20jun24/2.1%20-%202.2%20-%20Cadastro%20e%20Login.mp4" type="video/mp4">
+    
 </video>
     <figcaption>Figura 04 - Tela de evidência exibição da tela de login.</figcaption>
 </figure>
@@ -59,7 +59,7 @@
 <figure>
    <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.1.1 - Login validando dados.mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 05 - Tela de evidência exibição da tela de login validando dados.</figcaption>
 </figure>
@@ -69,7 +69,7 @@
 <figure>
    <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.1 - 2.2 - Cadastro e Login.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 06 - Tela de evidência exibição da tela de cadastro.</figcaption>
 </figure>
@@ -81,7 +81,7 @@
 <figure>
     <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.2.1 - cadastro validando dados.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 07 - Tela de evidência exibição da tela de cadastro validando dados.</figcaption>
 </figure>
@@ -91,7 +91,7 @@
 <figure>
     <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.3 - atualizando nome usuario email e senha.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 08 - Tela de evidência exibição da tela do perfil com atualização de dados.</figcaption>
 </figure>
@@ -100,7 +100,7 @@
 
 <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.4 - validando disponibilidade de horarios.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 09 - Tela de agendamento validando disponibilidade de datas.</figcaption>
 </figure>
@@ -109,7 +109,7 @@
 
 <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.5 - favoritando barbeiro.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 10 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.</figcaption>
 </figure>
@@ -118,7 +118,7 @@
 
 <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.6 - desfavoritando barbeiro.mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 11 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.</figcaption>
 </figure>
@@ -127,7 +127,7 @@
 
 <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.7 - 2.8 - Realizando Agendamento e verificando o historico.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 12 - Tela de agendamento validando disponibilidade de datas e concluindo agendamento.</figcaption>
 </figure>
@@ -136,7 +136,7 @@
 
 <video controls width="70%">
     <source src="img/Testes/Registros de testes jun24/2.7 - 2.8 - Realizando Agendamento e verificando o historico.mp4" type="video/mp4">
-    Seu navegador não suporta a reprodução de vídeos.
+    
 </video>
     <figcaption>Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente</figcaption>
 </figure>
