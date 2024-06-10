@@ -1,44 +1,5 @@
 # Evidências de Testes de Software
 
-## API
-
-### 01 - Login/Cadastro
-
-#### **1.1 - Verificar se o e-mail informado ao se cadastrar no sistema é existente**
-
-<figure>
-    <img src="img/api/api_post_000.png" alt="e-mail existente"
-        width="900" height="600">
-    <figcaption>Figura 01 - Evidência e-mail cadastrado existente.</figcaption>
-</figure>
-
-#### **1.2 - Verificar se o cadastro é realizado corretamente no sistema**
-
-<figure>
-    <img src="img/api/api_post_002.png" alt="e-mail sucesso"
-        width="900" height="600">
-    <figcaption>Figura 02 - Evidência e-mail cadastrado com sucesso.</figcaption>
-</figure>
-
-#### **1.3 - Verificar se o  sistema permite somente usuários cadastrados autenticarem na plataforma**
-
-##### **1.3.1 - Evidencia de falha no acesso, com usuários não cadastrados**
-
-<figure>
-    <img src="img/api/api_post_003.png" alt="usuário não cadastrado"
-        width="900" height="600">
-    <figcaption>Figura 02 - Evidência e-mail cadastrado com sucesso.</figcaption>
-</figure>
-
-##### **1.3.2 - Evidencia de sucesso no acesso, com usuários cadastrados**
-
-<figure>
-    <img src="img/api/api_post_003.png" alt="usuario cadastrado"
-        width="1024" height="768">
-    <figcaption>Figura 03 - Tela de evidência de usuário cadastrado com sucesso.</figcaption>
-</figure>
-
-
 ## FRONT-END
 
 ### 02 - Login/Cadastro
@@ -96,3 +57,120 @@
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/d76f1c50-91d6-49ce-abe3-be193a782658">  </video>
 ##### Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente.
+
+## API
+
+### 01 - Login/Cadastro
+
+#### **1. - Verificar se o fornecendo os parâmetros corretos o usuário é cadastrado**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/01-cadastro.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 01 - Evidência novo usuário cadastrado.</figcaption>
+</figure>
+
+#### **1.2 - Verificar se o login é bloqueado ao digitar a senha ou e-mail errado**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/02-login-erro.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 02 - Evidência bloqueio de acesso com dados errados</figcaption>
+</figure>
+
+#### **1.2.1 - Verificar se o sistema permite o login com os dados corretos de e-mail e senha**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/02-login-ok.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 02.1 - Evidência login autorizado com dados corretos.</figcaption>
+</figure>
+
+##### **1.3 - Refresh de token para usuários logados**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/03-refresh-token.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 03 - Evidência de atualização de token.</figcaption>
+</figure>
+
+##### **1.4 - Bloquear acesso a usuário com token expirado**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/04-token-erro.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 04 - Evidência de logout com token expirado.</figcaption>
+</figure>
+
+##### **1.5 - Logout de usuário**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/05-logout.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 05 - Evidência de logout.</figcaption>
+</figure>
+
+##### **2. - Requisição de informações de usuário**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/06-requsicao-user.png" alt=""
+        width="900" height="600">
+    <figcaption>Figura 06 - Evidência de dados do usuário.</figcaption>
+</figure>
+
+##### **3. - Requisição de informações de favoritos do usuário**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/7-requsicao-user-favorites.png" alt="" width="900" height="600">
+    <figcaption>Figura 07 - Evidência de favoritos do usuário vazio.</figcaption>
+</figure>
+
+##### **3.1 - Favoritar um barbeiro**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/7.2-requsicao-user-favorites.png" alt="" width="900" height="600">
+    <figcaption>Figura 07.1 - Evidência de favoritos do usuário.</figcaption>
+</figure>
+
+##### **3.2 - Confirmação de barbeiro favoritado**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/7.2-requsicao-user-favorites.png" alt="" width="900" height="600">
+    <figcaption>Figura 07.2 - Evidência de favorito incluído do usuário.</figcaption>
+</figure>
+
+##### **4 - Rota para agendamento de serviço com barbeiro**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <figcaption>Figura 08. - Evidência de rota disponível.</figcaption>
+</figure>
+
+##### **4.1 - Disponibilidade de datas para agendamento de serviço com barbeiro**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <figcaption>Figura 08.1 - Evidência de agendamento não disponível de acordo com data/hora.</figcaption>
+</figure>
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/8.2-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <figcaption>Figura 08.2 - Evidência de agendamento não disponível de acordo com data/hora.</figcaption>
+</figure>
+
+##### **4.3 - Confirmação de agendamento de serviço com barbeiro**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <figcaption>Figura 08.3 - Evidência de rota de agendamento.</figcaption>
+</figure>
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/8.4-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <figcaption>Figura 08.3 - Evidência de agendamento.</figcaption>
+</figure>
+
+##### **5 - Listagem de barbeiros**
+
+<figure>
+    <img src="img/Testes/Registros de testes jun24/api/9-requsicao-barbers.png" alt="" width="900" height="600">
+    <figcaption>Figura 09 - Listagem dos barbeiros cadastrados.</figcaption>
+</figure>
