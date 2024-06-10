@@ -38,105 +38,61 @@
     <figcaption>Figura 03 - Tela de evidência de usuário cadastrado com sucesso.</figcaption>
 </figure>
 
+
 ## FRONT-END
 
 ### 02 - Login/Cadastro
 
 #### **2.1 - Verificar se a exbição da tela de login está correta**
 
-<figure>    
-    <video controls width="70%">
-    <source src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/blob/dev/docs/img/Testes/Registros%20de%20testes%20jun24/2.1%20-%202.2%20-%20Cadastro%20e%20Login.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 04 - Tela de evidência exibição da tela de login.</figcaption>
-</figure>
-
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/74828af9-0110-4ac4-ab49-39903e1f20c5">  </video>
+##### Figura 04 - Tela de evidência exibição da tela de login.
 
 
 #### **2.1.1 - Verificar se a exbição da tela de login verifica os dados inseridos**
 
-<figure>
-   <video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.1.1 - Login validando dados.mp4">
-    
-</video>
-    <figcaption>Figura 05 - Tela de evidência exibição da tela de login validando dados.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/7150b516-9c2b-4e69-b806-02403265937c">  </video>    
+#####  Figura 05 - Tela de evidência exibição da tela de login validando dados.
+
 
 #### **2.2 - Verificar se a tela de cadastro está sendo exibida sem nenhum problema**
 
-<figure>
-   <video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.1 - 2.2 - Cadastro e Login.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 06 - Tela de evidência exibição da tela de cadastro.</figcaption>
-</figure>
-
-  
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/74828af9-0110-4ac4-ab49-39903e1f20c5">  </video>    
+##### Figura 06 - Tela de evidência exibição da tela de cadastro.
 
 #### **2.2.1 - Verificar se a tela de cadastro verifica os dados inseridos**
 
-<figure>
-    <video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.2.1 - cadastro validando dados.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 07 - Tela de evidência exibição da tela de cadastro validando dados.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/277cdce9-c91f-46e0-8664-40378ea91d19">  </video>    
+##### Figura 07 - Tela de evidência exibição da tela de cadastro validando dados.
 
 ### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
 
-<figure>
-    <video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.3 - atualizando nome usuario email e senha.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 08 - Tela de evidência exibição da tela do perfil com atualização de dados.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/b0857d07-1b92-49cf-b514-62ae0ea2d3f1">  </video>    
+##### Figura 08 - Tela de evidência exibição da tela do perfil com atualização de dados.
 
 #### **2.4 - Verificar se a tela do barbeiro está retornando os serviços e valores corretamente**
 
-<video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.4 - validando disponibilidade de horarios.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 09 - Tela de agendamento validando disponibilidade de datas.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/5ecc7028-27fb-45f3-aab5-1d3d41b5aec7">  </video>    
+##### Figura 09 - Tela de agendamento validando disponibilidade de datas.
+
 
 #### **2.5 - Verificar se a funcionalidade de favoritar o barbeiro está funcionando corretamente**
 
-<video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.5 - favoritando barbeiro.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 10 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/41669228-f4d9-4860-ad2c-3cc1b2a64390">  </video> 
+##### Figura 10 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.
+
 
 #### **2.6 - Verificar se a tela de favoritos está retornando os barbeiros favoritados corretamente**
 
-<video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.6 - desfavoritando barbeiro.mp4">
-    
-</video>
-    <figcaption>Figura 11 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/5895faa1-01b7-42c9-922d-8342b7137e7f">  </video>    
+##### Figura 11 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.
 
 #### **2.7 - Verificar se a tela de agendamento está retornando os serviços e valores corretamente e concluindo o agendamento**
 
-<video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.7 - 2.8 - Realizando Agendamento e verificando o historico.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 12 - Tela de agendamento validando disponibilidade de datas e concluindo agendamento.</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/d76f1c50-91d6-49ce-abe3-be193a782658">  </video>    
+##### Figura 12 - Tela de agendamento validando disponibilidade de datas e concluindo agendamento.
 
 #### **2.8 - Verificar se a tela de historico apresenta os agendamentos realizados pelo cliente**
 
-<video controls width="70%">
-    <source src="img/Testes/Registros de testes jun24/2.7 - 2.8 - Realizando Agendamento e verificando o historico.mp4" type="video/mp4">
-    
-</video>
-    <figcaption>Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente</figcaption>
-</figure>
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/d76f1c50-91d6-49ce-abe3-be193a782658">  </video>
+##### Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente.
