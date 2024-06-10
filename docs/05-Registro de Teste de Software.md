@@ -109,29 +109,3 @@
         width="203" height="436">
     <figcaption>Figura 11 - Tela de evidência exibição do perfil 04.</figcaption>
 </figure>
-
-### 3 - Agendamento
-
-#### **3.1 - Verificar se o modal de agendamento está mostrando a data e os horários disponíveis**
-
-<figure>
-    <img src="img/Testes/Print-Agenda3.1.png" alt="exibição de horarios disponiveis"
-        width="203" height="436">
-    <figcaption>Figura 12 - Tela de evidência exibição de horarios disponiveis.</figcaption>
-</figure>
-
-#### **3.2 - Verificar se o sistema retorna a mensagem de confirmação do agendamento**
-
-<figure>
-    <img src="img/Testes/Print-Agenda3.2.png" alt="exibição da mensagem de confirmação do agendamento"
-        width="203" height="436">
-    <figcaption>Figura 13 - Tela de evidência exibição da mensagem de confirmação do agendamento.</figcaption>
-</figure>
-
-#### **3.3 - Verificar se o agendamento realizado consta registrado na tela de agendamentos**
-
-<figure>
-    <img src="img/Testes/Print-Agenda3.3.png" alt="exibição de registro do agendamento feito na tela de agendamentos"
-        width="203" height="436">
-    <figcaption>Figura 14 - Tela de evidência exibição do registro na tela de agendamentos.</figcaption>
-</figure>
