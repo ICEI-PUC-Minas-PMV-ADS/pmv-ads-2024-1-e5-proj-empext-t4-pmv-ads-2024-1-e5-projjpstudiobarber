@@ -32,11 +32,23 @@
 - Passos: Após realizar acesso ao sistema, de forma local, navegar até a tela correspondente ao login.
 - Critério: Exibição correta dos campos de e-mail, senha e do botão "login".
 
+#### **2.1.1 - Verificar se a exbição da tela de login verifica os dados inseridos**
+
+- Objetivo: Garantir que os campos para login sejam preenchidos de maneira correta.
+- Passos: Após realizar acesso ao sistema, de forma local, navegar até a tela correspondente ao login.
+- Critério: Exibição mensagem validando os campos de e-mail e senha e retornar erro se não atender ao critério minimo.
+
 #### **2.2 - Verificar se a tela de cadastro está sendo exibida sem nenhum problema**
 
 - Objetivo: Garantir que os campos dos dados de cadastro estão sendo exibidos de maneira correta.
 - Passos: Após realizar acesso ao sistema, de forma local, navegar até a tela correspondente ao cadastro.
 - Critério: Exibição dos campos de cadastro e do botão "cadastrar".
+
+#### **2.2.1 - Verificar se a tela de cadastro verifica os dados inseridos**
+
+- Objetivo: Garantir que os campos para cadastro sejam preenchidos de maneira correta.
+- Passos: Após realizar acesso ao sistema, de forma local, navegar até a tela correspondente ao cadastro.
+- Critério: Exibição mensagem validando os campos de nome usuario, e-mail e senha e retornar erro se não atender ao critério minimo.
 
 #### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
 
@@ -49,4 +61,5 @@
 - Objetivo: Garantir que o sistema retornará corretamente os serviços, os valores, a data e o horario desejados para o agendamento.
 - Passos: Após realizar acesso ao sistema, de forma local, navegar até a pagina do perfil, selecionar o serviço, a data e o horario desejados.
 - Critério: Exibição dos dados corretos selecionados para o agendamento.
+
 

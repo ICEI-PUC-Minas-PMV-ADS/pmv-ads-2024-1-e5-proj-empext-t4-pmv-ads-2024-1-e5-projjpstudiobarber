@@ -39,8 +39,8 @@ Foi utilizado a técnica de priorização da Matriz MoSCOW.
 |RF-002| A aplicação deve ter opção de login para seus usuários, mediante a senha, com acessos diferenciados entre Cliente e Admin. | ALTA |
 |RF-003| A aplicação deve exibir um botão "Agendamento" na <i>landing page</i> para acesso da função de seleção de data, horários e serviços disponíveis. | ALTA |
 |RF-004| A aplicação deverá permitir que o Admin faça o cancelamento, edição ou alteração dos agendamentos. | ALTA |
-|RF-005| A aplicação deve permitir que o Cliente faça mais de um agendamento ou agendamento recorrente. | MÉDIA |
-|RF-006| A aplicação deve permitir que o Cliente faça o cancelamento ou alteração do serviço agendado. | ALTA |
+|RF-005| A aplicação deve permitir que o Cliente faça mais de um agendamento. | MÉDIA |
+|RF-006| A aplicação deve permitir que o Cliente faça o cancelamento ou alteração do serviço agendado. | ALTA | (Removido a pedido Cliente)
 |RF-007| A aplicação deve permitir a avaliação dos serviços realizados pelo Cliente. | MÉDIA |
 |RF-008| A aplicação deverá permitir o agendamento de serviços para o Cliente, somente com uma antecedência minima de 1 hora. | MÉDIA |
 |RF-009| A aplicação deverá enviar um alerta de confirmação do serviço agendado. | BAIXA |
