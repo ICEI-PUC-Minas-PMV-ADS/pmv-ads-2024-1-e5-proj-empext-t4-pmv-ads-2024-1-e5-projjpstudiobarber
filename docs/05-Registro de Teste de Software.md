@@ -12,7 +12,14 @@
 
 #### **2.1.1 - Verificar se a exbição da tela de login verifica os dados inseridos**
 
+
+
+
+
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/7150b516-9c2b-4e69-b806-02403265937c">  </video>    
+
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/e69fd19e-fe15-46ab-a99a-e174c303e3dd">  </video>  
+
 #####  Figura 05 - Tela de evidência exibição da tela de login validando dados.
 
 
