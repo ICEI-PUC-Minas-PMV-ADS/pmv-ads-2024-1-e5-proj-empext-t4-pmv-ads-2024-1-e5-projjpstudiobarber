@@ -44,68 +44,99 @@
 
 #### **2.1 - Verificar se a exbição da tela de login está correta**
 
-<figure>
-    <img src="img/Testes/Print-login.jpeg" alt="exibição da tela de login"
-        width="203" height="436">
+<figure>    
+    <video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.1 - 2.2 - Cadastro e Login.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
     <figcaption>Figura 04 - Tela de evidência exibição da tela de login.</figcaption>
+</figure>
+
+
+
+#### **2.1.1 - Verificar se a exbição da tela de login verifica os dados inseridos**
+
+<figure>
+   <video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.1.1 - Login validando dados.mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 05 - Tela de evidência exibição da tela de login validando dados.</figcaption>
 </figure>
 
 #### **2.2 - Verificar se a tela de cadastro está sendo exibida sem nenhum problema**
 
 <figure>
-    <img src="img/Testes/Print-cadastro.jpeg" alt="exibição da tela de cadastro"
-        width="203" height="436">
-    <figcaption>Figura 05 - Tela de evidência exibição da tela de cadastro.</figcaption>
+   <video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.1 - 2.2 - Cadastro e Login.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 06 - Tela de evidência exibição da tela de cadastro.</figcaption>
 </figure>
 
-#### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
+  
+
+#### **2.2.1 - Verificar se a tela de cadastro verifica os dados inseridos**
 
 <figure>
-    <img src="img/Testes/Print-Agenda.jpeg" alt="exibição da tela de perfil"
-        width="203" height="436">
-    <figcaption>Figura 06 - Tela de evidência exibição da tela de perfil.</figcaption>
+    <video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.2.1 - cadastro validando dados.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 07 - Tela de evidência exibição da tela de cadastro validando dados.</figcaption>
 </figure>
 
-  Com erro no menus ainda.
+### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
+
+<figure>
+    <video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.3 - atualizando nome usuario email e senha.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 08 - Tela de evidência exibição da tela do perfil com atualização de dados.</figcaption>
+</figure>
 
 #### **2.4 - Verificar se a tela do barbeiro está retornando os serviços e valores corretamente**
 
-<figure>
-    <img src="img/Testes/Print-Perfil1.jpeg" alt="exibição do perfil do barbeiro"
-        width="203" height="436">
-    <figcaption>Figura 07 - Tela de evidência exibição do perfil do barbeiro.</figcaption>
+<video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.4 - validando disponibilidade de horarios.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 09 - Tela de agendamento validando disponibilidade de datas.</figcaption>
 </figure>
 
-##### **2.4.1 - Exibição da Tela de Perfil dos Barbeiros Cadastrados**
+#### **2.5 - Verificar se a funcionalidade de favoritar o barbeiro está funcionando corretamente**
 
-###### **2.4.1.1 - Perfil 01**
-
-<figure>
-    <img src="img/Testes/Print-Perfil2.jpeg" alt="exibição perfil-01"
-        width="203" height="436">
-    <figcaption>Figura 08 - Tela de evidência exibição do perfil 01.</figcaption>
+<video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.5 - favoritando barbeiro.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 10 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.</figcaption>
 </figure>
 
-###### **2.4.1.2 - Perfil 02**
+#### **2.6 - Verificar se a tela de favoritos está retornando os barbeiros favoritados corretamente**
 
-<figure>
-    <img src="img/Testes/Print_Perfil3.jpeg" alt="exibição perfil-02"
-        width="203" height="436">
-    <figcaption>Figura 09 - Tela de evidência exibição do perfil 02.</figcaption>
+<video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.6 - desfavoritando barbeiro.mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 11 - Tela de agendamento validando o botão para adicionar um barbeiro como favorito.</figcaption>
 </figure>
 
-###### **2.4.1.3 - Perfil 03**
+#### **2.7 - Verificar se a tela de agendamento está retornando os serviços e valores corretamente e concluindo o agendamento**
 
-<figure>
-    <img src="img/Testes/Print-Perfil4.jpeg" alt="exibição perfil-03"
-        width="203" height="436">
-    <figcaption>Figura 10 - Tela de evidência exibição do perfil 03.</figcaption>
+<video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.7 - 2.8 - Realizando Agendamento e verificando o historico.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 12 - Tela de agendamento validando disponibilidade de datas e concluindo agendamento.</figcaption>
 </figure>
 
-###### **2.4.1.4 - Perfil 04**
+#### **2.8 - Verificar se a tela de historico apresenta os agendamentos realizados pelo cliente**
 
-<figure>
-    <img src="img/Testes/Print-Perfil5.jpeg" alt="exibição perfil-04"
-        width="203" height="436">
-    <figcaption>Figura 11 - Tela de evidência exibição do perfil 04.</figcaption>
+<video controls width="70%">
+    <source src="img/Testes/Registros de testes jun24/2.7 - 2.8 - Realizando Agendamento e verificando o historico.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeos.
+</video>
+    <figcaption>Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente</figcaption>
 </figure>
