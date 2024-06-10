@@ -5,6 +5,8 @@
 #### **2.1 - Verificar se a exbição da tela de login está correta**
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/74828af9-0110-4ac4-ab49-39903e1f20c5">  </video>
+[Evidência - Gabriel] https://vimeo.com/955698408?share=copy
+
 ##### Figura 04 - Tela de evidência exibição da tela de login.
 
 
@@ -26,7 +28,8 @@
 
 ### **2.3 - Verificar se a tela de Perfil está sendo exibida corretamente**
 
-<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/b0857d07-1b92-49cf-b514-62ae0ea2d3f1">  </video>    
+<video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/b0857d07-1b92-49cf-b514-62ae0ea2d3f1">  </video>   [Evidência - Gabriel] https://vimeo.com/955702693?share=copy
+
 ##### Figura 08 - Tela de evidência exibição da tela do perfil com atualização de dados.
 
 #### **2.4 - Verificar se a tela do barbeiro está retornando os serviços e valores corretamente**
@@ -54,6 +57,8 @@
 #### **2.8 - Verificar se a tela de historico apresenta os agendamentos realizados pelo cliente**
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/d76f1c50-91d6-49ce-abe3-be193a782658">  </video>
+[Evidência - Gabriel] https://vimeo.com/955702497?share=copy
+
 ##### Figura 13 - Tela de historico mostrando os agendamentos realizados pelo cliente.
 
 ## API
