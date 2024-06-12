@@ -1,30 +1,36 @@
 {
   "expo": {
-    "name": "app",
+    "name": "JP Studio Barber",
     "slug": "app",
     "version": "1.0.0",
-    "orientation": "portrait",   
-    "icon": "./assets/icon.png",
+    "orientation": "portrait",
+    "icon": "./src/assets/logo1a.png",
     "userInterfaceStyle": "light",
+    "platforms": [
+      "android"
+    ],
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/logo1a.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "com.barber.JPStudioBarber",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/logo1a.png",
         "backgroundColor": "#ffffff"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "ff906155-5921-41eb-bd3d-d6d5a2d8e485"
+      }
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
     }
   }
 }
