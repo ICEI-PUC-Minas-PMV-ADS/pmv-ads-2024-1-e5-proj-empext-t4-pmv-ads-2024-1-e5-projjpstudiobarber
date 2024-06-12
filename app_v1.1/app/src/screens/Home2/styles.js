@@ -37,6 +37,13 @@ export const InfoText = styled.Text`
     text-align: justify;
 `;
 
+export const InfoText2 = styled.Text`
+    font-size: 16px;
+    color: #C2995B;
+    text-align: center;
+    margin-top: 20px;
+`;
+
 export const ScheduleButton = styled.TouchableOpacity`
     height: 50px;
     background-color: #C2995B;

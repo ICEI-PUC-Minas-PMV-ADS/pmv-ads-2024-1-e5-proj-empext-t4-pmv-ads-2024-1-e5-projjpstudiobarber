@@ -10,6 +10,7 @@ import {
     ListArea,
     LoadingIcon,
     InfoText,
+    InfoText2,
     ScheduleButton,
     ScheduleButtonText,
     LastAppointment,
@@ -26,13 +27,10 @@ export default () => {
     const getLastAppointment = async () => {
         setLoading(true);
         let res = await Api.getAppointments();
-        // console.log("API response:", res);  // Adicione esta linha para debug
 
         if (res.error === '') {
             if (res.list && res.list.length > 0) {
-                // Obtendo o último agendamento (supondo que a lista esteja em ordem cronológica)
-                const lastApp = res.list[res.list.length - 1];
-                //console.log("Last appointment:", lastApp);  // Adicione esta linha para debug
+                const lastApp = res.list[0]; // Obtém o primeiro item do array, que será o último agendamento com base na posição no banco de dados
                 setLastAppointment(lastApp);
             } else {
                 setLastAppointment(null);
@@ -54,7 +52,7 @@ export default () => {
     }
 
     const handleSchedulePress = () => {
-        navigation.navigate('Appointments'); // Substitua 'Appointments' pelo nome correto da tela de agendamento
+        navigation.navigate('Appointments'); 
     }
 
     return (
@@ -81,12 +79,12 @@ export default () => {
 
                     {loading && <LoadingIcon size="large" color="#C2995B" />}
                     
-                    {!loading && lastAppointment ? (
+                    {lastAppointment ? (
                         <LastAppointment>
                             <AppointmentInfo>Último Agendamento:</AppointmentInfo>
-                            <AppointmentInfo>Data: {lastAppointment.date}</AppointmentInfo>
-                            <AppointmentInfo>Hora: {lastAppointment.hour}</AppointmentInfo>
-                            <AppointmentInfo>Barbeiro: {lastAppointment.barberName}</AppointmentInfo>
+                            <AppointmentInfo>Data: {lastAppointment.datetime}</AppointmentInfo>
+                            <AppointmentInfo>Hora: {lastAppointment.datetime.substring(11, 16)}</AppointmentInfo>
+                            <AppointmentInfo>Barbeiro: {lastAppointment.barber.name}</AppointmentInfo>
                         </LastAppointment>
                     ) : (
                         <NoAppointmentText>Nenhum agendamento realizado</NoAppointmentText>
@@ -99,11 +97,11 @@ export default () => {
                 </ListArea>
 
             </Scroller>
-            <InfoText>
+            <InfoText2>
                 {"\n\n"}
                 Rua Mineiro Joaquim Calixto, 162 - Bela Vista,
                 {"\n"}
-                Nova Lima - MG, 34004-223, Brazil </InfoText>
+                Nova Lima - MG, 34004-223, Brazil </InfoText2>
         </Container>
     );
 }
