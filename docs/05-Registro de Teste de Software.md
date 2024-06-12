@@ -44,11 +44,6 @@
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/5ecc7028-27fb-45f3-aab5-1d3d41b5aec7">  </video>    
 ##### Figura 09 - Tela de agendamento validando disponibilidade de datas.
 
-
-
-
-
-
 #### **2.5 - Verificar se a funcionalidade de favoritar o barbeiro está funcionando corretamente**
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/41669228-f4d9-4860-ad2c-3cc1b2a64390">  </video>
