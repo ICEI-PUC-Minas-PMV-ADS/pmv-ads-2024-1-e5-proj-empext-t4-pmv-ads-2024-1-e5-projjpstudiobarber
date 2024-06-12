@@ -69,7 +69,7 @@ repositório: "\... 2024-1-e5-projjpstudiobarber\\app_v1.1\\app"
 
 ## 8. PASSO A PASSO PARA GERAR O ARQUIVO APK DO ANDROID
 
-#### 8.1. Todos os comandos devem ser utilizados dentro da pasta ondo o projeto está, no caso deste projeto será no seguinte caminho:
+#### 8.1. Todos os comandos devem ser utilizados dentro da pasta onde o projeto está, no caso deste projeto será no seguinte caminho:
 
 `.\pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber\app_v1.1\app`
 
@@ -87,26 +87,27 @@ repositório: "\... 2024-1-e5-projjpstudiobarber\\app_v1.1\\app"
 
 Irá aparecer as solicitações abaixo:
 
-Enter keystore password:
-Re-enter new password:
-Enter the distinguished name. Provide a single dot (.) to leave a sub-component empty or press ENTER to use the defaul
-What is your first and last name? (Preencher o primeiro e último nome)
-  [Unknown]:  Armando Amorim
-What is the name of your organizational unit? (Nome da unidade organizacional)
-  [Unknown]:  JP Studio Barber
-What is the name of your organization? (Nome da organização)
-  [Unknown]:  JP Studio Barber
-What is the name of your City or Locality? (Cidade)
-  [Unknown]:  Belo Horizonte
-What is the name of your State or Province? (Estado)
-  [Unknown]:  Minas Gerais
-What is the two-letter country code for this unit?
-  [Unknown]:  MG
-Is CN=Armando Amorim, OU=JP Studio Barber, O=JP Studio Barber, L=Belo Horizonte, ST=Minas Gerais, C=MG correct?
+Enter keystore password:  
+Re-enter new password:  
+Enter the distinguished name. Provide a single dot (.) to leave a sub-component empty or press ENTER to use the default  
+  
+What is your first and last name? (Preencher o primeiro e último nome)  
+  [Unknown]:  Armando Amorim  
+What is the name of your organizational unit? (Nome da unidade organizacional)  
+  [Unknown]:  JP Studio Barber  
+What is the name of your organization? (Nome da organização)  
+  [Unknown]:  JP Studio Barber  
+What is the name of your City or Locality? (Cidade)  
+  [Unknown]:  Belo Horizonte  
+What is the name of your State or Province? (Estado)  
+  [Unknown]:  Minas Gerais  
+What is the two-letter country code for this unit?  
+  [Unknown]:  MG  
+Is CN=Armando Amorim, OU=JP Studio Barber, O=JP Studio Barber, L=Belo Horizonte, ST=Minas Gerais, C=MG correct?  
   [no]:  yes
 
 Generating 2.048 bit RSA key pair and self-signed certificate (SHA384withRSA) with a validity of 10.000 days
-for: CN=Armando Amorim, OU=JP Studio Barber, O=JP Studio Barber, L=Belo Horizonte, ST=Minas Gerais, C=MG
+for: CN=Armando Amorim, OU=JP Studio Barber, O=JP Studio Barber, L=Belo Horizonte, ST=Minas Gerais, C=MG  
 [Storing my-release-key.jks]
 
 #### 8.5. INICIAR O PROCESSO DE BUILD
@@ -117,18 +118,18 @@ for: CN=Armando Amorim, OU=JP Studio Barber, O=JP Studio Barber, L=Belo Horizont
 
 **COMANDO:** `eas build -p android --profile production`
 
-Ao rodar este comandos pela primeira vez, vai iniciar uma sequencia de solicitações para acesso à conta da expo e pedindo informações da keystore gerada.
-
+Ao rodar este comandos pela primeira vez, irá iniciar uma sequencia de solicitações para acesso à conta da expo e pedindo informações da keystore gerada.
+  
 An Expo user account is required to proceed.
-Log in to EAS with email or username (exit and run eas login --help to see other login options)
-
-√ Email or username ... armando1182
-√ Password ... ********
-√ Would you like to automatically create an EAS project for @armando1182/app? ... yes
-√ Path to the Keystore file. ... `C:\pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber\app_v1.1\app\my-release-key.jks` **(este caminho irá variar de acordo com a máquina de cada um)**
-√ Keystore password ... ********
-√ Key alias ... verificar no arquivo da keystore gerada
-√ Key password ... ********
+Log in to EAS with email or username (exit and run eas login --help to see other login options)  
+  
+√ Email or username ... armando1182  
+√ Password ... ********  
+√ Would you like to automatically create an EAS project for @armando1182/app? ... yes  
+√ Path to the Keystore file. ... `C:\pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber\app_v1.1\app\my-release-key.jks` **(este caminho irá variar de acordo com a máquina de cada um)**  
+√ Keystore password ... ********  
+√ Key alias ... verificar no arquivo da keystore gerada  
+√ Key password ... ********  
 
 **OBS: PARA VERIFICAR O ALIAS DA KEY GERADA, VERIFIQUE ATRAVÉS DO COMANDO ABAIXO, SERÁ EXIBIDO NO CAMPO "ALIAS NAME"**
 
