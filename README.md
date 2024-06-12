@@ -32,15 +32,15 @@ Abaixo, seguem as instruções para rodar o projeto localmente:
     <img src="docs/img/image1.png" alt="Tela de Login" width="900" height="600">
 </figure>
 
-## 2. Instalar o Visual Studio Code (link para download
+## 2. Instalar o Visual Studio Code
 
 [Download do Visual Studio Code](https://code.visualstudio.com/download)
 
-## 3. Instalar Node.js c/ o NPM (link para download
+## 3. Instalar Node.js c/ o NPM
 
 [Download do Node.js Package Manager](https://nodejs.org/en/download/package-manager)
 
-## 4. Instalar o Android Studio (link para download
+## 4. Instalar o Android Studio
 
 [Download do Android Studio](https://developer.android.com/studio?hl=pt-br)
 
@@ -69,7 +69,7 @@ repositório: "\... 2024-1-e5-projjpstudiobarber\\app_v1.1\\app"
 
 ## 8. PASSO A PASSO PARA GERAR O ARQUIVO APK DO ANDROID
 
-#### 8.1. Todos os comandos devem ser utilizados dentro da pasta onde o projeto está, no caso deste projeto será no seguinte caminho:
+#### 8.1. Todos os comandos devem ser utilizados dentro da pasta onde o projeto está localizado, no caso deste projeto será no seguinte caminho:
 
 `.\pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber\app_v1.1\app`
 
@@ -112,13 +112,13 @@ for: CN=Armando Amorim, OU=JP Studio Barber, O=JP Studio Barber, L=Belo Horizont
 
 #### 8.5. INICIAR O PROCESSO DE BUILD
 
-**OBS: ANTES DE INICIAR ESTE PROCESSO, É NECESSÁRIO CRIAR UMA CONTA NA EXPO, CASO NÃO TENHA, CRIA UMA PARA DAR SEQUENCIA, CONFORME ABAIXO.**
+**OBS: ANTES DE INICIAR ESTE PROCESSO, É NECESSÁRIO CRIAR UMA CONTA NA EXPO, CASO NÃO TENHA, CRIE UMA PARA DAR SEQUENCIA, CONFORME ABAIXO.**
 
 [Link para acessar o Expo](https://expo.dev/)
 
 **COMANDO:** `eas build -p android --profile production`
 
-Ao rodar este comandos pela primeira vez, irá iniciar uma sequencia de solicitações para acesso à conta da expo e pedindo informações da keystore gerada.
+Ao executar este comandos pela primeira vez, uma sequencia de solicitações irá se iniciar, para acessar a conta da expo e pedindo informações da keystore gerada.
   
 An Expo user account is required to proceed.
 Log in to EAS with email or username (exit and run eas login --help to see other login options)  
@@ -135,7 +135,7 @@ Log in to EAS with email or username (exit and run eas login --help to see other
 
 `keytool -list -v -keystore + [caminho da keystore gerada]`
 
-**OBS: Se todos os passos forem executados de forma satisfatória o processo de criação do arquivo apk irá se iniciar, para acompanhar o build, acesso o site do expo com o usuário correspondente criado e no menu lateral ao logar clique em "Builds". Ao final do processo irá habilitar o botão para download do arquivo.**
+**OBS: Se todos os passos forem executados de forma satisfatória o processo de criação do arquivo apk irá se iniciar, para acompanhar o build, acesse o site do expo com o usuário criado anteriormente e no menu lateral, ao logar, clique em "Builds". Ao final do processo irá habilitar o botão para download do arquivo.**
 
 ## Documentação
 
