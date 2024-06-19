@@ -10,7 +10,6 @@ import {
     ListArea,
     LoadingIcon,
     InfoText,
-    InfoText2,
     ScheduleButton,
     ScheduleButtonText,
     LastAppointment,
@@ -22,18 +21,24 @@ export default () => {
     const navigation = useNavigation();
     const [loading, setLoading] = useState(false);
     const [refreshing, setRefreshing] = useState(false);
-    const [lastAppointment, setLastAppointment] = useState(null);
+    const [nextAppointment, setNextAppointment] = useState(null);
 
-    const getLastAppointment = async () => {
+    const getNextAppointment = async () => {
         setLoading(true);
         let res = await Api.getAppointments();
 
         if (res.error === '') {
             if (res.list && res.list.length > 0) {
-                const lastApp = res.list[0]; // Obtém o primeiro item do array, que será o último agendamento com base na posição no banco de dados
-                setLastAppointment(lastApp);
+                const now = new Date();
+                const upcomingAppointments = res.list.filter(appointment => new Date(appointment.datetime) > now);
+                upcomingAppointments.sort((a, b) => new Date(a.datetime) - new Date(b.datetime));
+                if (upcomingAppointments.length > 0) {
+                    setNextAppointment(upcomingAppointments[0]);
+                } else {
+                    setNextAppointment(null);
+                }
             } else {
-                setLastAppointment(null);
+                setNextAppointment(null);
             }
         } else {
             alert("Erro: " + res.error);
@@ -42,17 +47,22 @@ export default () => {
     }
 
     useEffect(() => {
-        getLastAppointment();
+        getNextAppointment();
     }, []);
 
     const onRefresh = () => {
         setRefreshing(true);
-        getLastAppointment();
+        getNextAppointment();
         setRefreshing(false);
     }
 
     const handleSchedulePress = () => {
         navigation.navigate('Appointments'); 
+    }
+
+    const formatDate = (datetime) => {
+        const date = new Date(datetime);
+        return date.toLocaleDateString('pt-BR'); // Formata a data para DD/MM/YYYY
     }
 
     return (
@@ -79,15 +89,16 @@ export default () => {
 
                     {loading && <LoadingIcon size="large" color="#C2995B" />}
                     
-                    {lastAppointment ? (
+                    {nextAppointment ? (
                         <LastAppointment>
-                            <AppointmentInfo>Último Agendamento:</AppointmentInfo>
-                            <AppointmentInfo>Data: {lastAppointment.datetime}</AppointmentInfo>
-                            <AppointmentInfo>Hora: {lastAppointment.datetime.substring(11, 16)}</AppointmentInfo>
-                            <AppointmentInfo>Barbeiro: {lastAppointment.barber.name}</AppointmentInfo>
+                            <AppointmentInfo>Próximo Atendimento Agendado:</AppointmentInfo>
+                            <AppointmentInfo>Data: {formatDate(nextAppointment.datetime)}</AppointmentInfo>
+                            <AppointmentInfo>Hora: {nextAppointment.datetime.substring(11, 16)}</AppointmentInfo>
+                            <AppointmentInfo>Barbeiro: {nextAppointment.barber.name}</AppointmentInfo>
+                            <AppointmentInfo>Serviço: {nextAppointment.service.name}</AppointmentInfo>
                         </LastAppointment>
                     ) : (
-                        <NoAppointmentText>Nenhum agendamento realizado</NoAppointmentText>
+                        <NoAppointmentText>Nenhum agendamento próximo</NoAppointmentText>
                     )}
 
                     <ScheduleButton onPress={handleSchedulePress}>
@@ -97,11 +108,12 @@ export default () => {
                 </ListArea>
 
             </Scroller>
-            <InfoText2>
+            <InfoText style={{textAlign: 'center'}}>
                 {"\n\n"}
                 Rua Mineiro Joaquim Calixto, 162 - Bela Vista,
                 {"\n"}
-                Nova Lima - MG, 34004-223, Brazil </InfoText2>
+                Nova Lima - MG, 34004-223, Brazil 
+            </InfoText>
         </Container>
     );
 }

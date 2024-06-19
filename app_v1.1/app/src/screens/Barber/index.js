@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import { Text } from 'react-native';
+import { Text, Alert } from 'react-native';
 import Swiper from 'react-native-swiper';
 
 import Stars from '../../components/Stars';
@@ -51,9 +51,8 @@ import {
 
 import Api from '../../Api';
 
-
 export default () => {
-    const navigation = useNavigation()
+    const navigation = useNavigation();
     const route = useRoute();
 
     const [userInfo, setUserInfo] = useState({
@@ -75,7 +74,6 @@ export default () => {
             if (json.error == '') {
                 setUserInfo(json.data);
                 setFavorited(json.data.favorited);
-                //console.log(json.data.available);
             } else {
                 alert("Erro: " + json.error);
             }
@@ -90,15 +88,17 @@ export default () => {
     }
 
     const handleFavClick = () => {
-        setFavorited( !favorited );
-        Api.setFavorite( userInfo.id);
-
+        setFavorited(!favorited);
+        Api.setFavorite(userInfo.id);
     }
 
-    const handleServiceChoose = (key) => {
-        setSelectedService(key);
-        setShowModal(true);
-
+    const handleServiceChoose = (key, price) => {
+        if (price === 0.01) {
+            Alert.alert("Por favor, consulte o preço com o barbeiro.");
+        } else {
+            setSelectedService(key);
+            setShowModal(true);
+        }
     }
 
     return (
@@ -131,20 +131,18 @@ export default () => {
                         </UserInfo>
                         <UserFavButton onPress={handleFavClick}>
                             {favorited ?
-                            <FavoriteFullIcon width="24" height="24" fill="#FF0000" />
-                            :
-                            <FavoriteIcon width="24" height="24" fill="#FF0000" />
-                            
-                        }
-                            
+                                <FavoriteFullIcon width="24" height="24" fill="#FF0000" />
+                                :
+                                <FavoriteIcon width="24" height="24" fill="#FF0000" />
+
+                            }
+
                         </UserFavButton>
                     </UserInfoArea>
 
                     {loading &&
                         <LoadingIcon size="large" color="#000000" />
                     }
-
-
 
                     {userInfo.services &&
                         <ServiceArea>
@@ -154,10 +152,20 @@ export default () => {
                                 <ServiceItem key={key}>
                                     <ServiceInfo>
                                         <ServiceName>{item.name}</ServiceName>
-                                        <ServicePrice>R$ {item.price} </ServicePrice>
+                                        {item.price !== 0.01 &&
+                                            <ServicePrice>R$ {item.price.toFixed(2)} </ServicePrice>
+                                        }
                                     </ServiceInfo>
-                                    <ServiceChooseButton onPress={()=>handleServiceChoose(key)}>
-                                        <ServiceChooseBtnText>Agendar</ServiceChooseBtnText>
+                                    <ServiceChooseButton
+                                        onPress={() => handleServiceChoose(key, item.price)}
+                                        disabled={item.price === 0.01}
+                                        style={{
+                                            backgroundColor: item.price === 0.01 ? '#F6E9C3' : '#C2995B'
+                                        }}
+                                    >
+                                        <ServiceChooseBtnText>
+                                            {item.price === 0.01 ? "Consultar" : "Agendar"}
+                                        </ServiceChooseBtnText>
                                     </ServiceChooseButton>
                                 </ServiceItem>
                             ))}
@@ -174,11 +182,11 @@ export default () => {
                                 nextButton={<NavNextIcon width="35" height="35" fill="#C2995B" />}
 
                             >
-                                {userInfo.testimonials.map((item, key)=>(
+                                {userInfo.testimonials.map((item, key) => (
                                     <TestimonialItem key={key}>
                                         <TestimonialInfo>
                                             <TestimonialName>{item.name}</TestimonialName>
-                                                <Stars stars={item.rate} showNumber={false}/>                                                
+                                            <Stars stars={item.rate} showNumber={false} />
                                         </TestimonialInfo>
                                         <TestimonialBody>{item.body}</TestimonialBody>
                                     </TestimonialItem>
@@ -199,7 +207,7 @@ export default () => {
                 setShow={setShowModal}
                 user={userInfo}
                 service={selectedService}
-            
+
             />
         </Container>
     );

@@ -2,7 +2,7 @@
   "expo": {
     "name": "JP Studio Barber",
     "slug": "app",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./src/assets/logo1a.png",
     "userInterfaceStyle": "light",
@@ -26,7 +26,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "ff906155-5921-41eb-bd3d-d6d5a2d8e485"
+        "projectId": "b8521287-9107-49e7-a233-f41850549c4e"
       }
     },
     "updates": {
