@@ -57,7 +57,7 @@ export default () => {
     }
 
     const handleSchedulePress = () => {
-        navigation.navigate('Appointments'); 
+        navigation.navigate('Appointments');
     }
 
     const formatDate = (datetime) => {
@@ -75,6 +75,7 @@ export default () => {
                 </HeaderArea>
 
                 <ListArea>
+
                     <InfoText>
                         JP Barber, desde 2020 entregando qualidade!
                         {"\n\n"}
@@ -87,8 +88,21 @@ export default () => {
                         Instagran: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('https://www.instagram.com/j0natas_nunes')}>@j0natas_nunes</Text>
                     </InfoText>
 
+                    {/*
+                    <InfoText>
+                        Salão do Eude, desde 2009 entregando qualidade!
+                        {"\n\n"}
+                        O homem moderno também cuida da sua aparência, e a nossa barbearia é o melhor lugar para fazer isso! Quem quer ser bem atendido e voltar para casa mais bonito sabe que aqui no Salão do Eude é o melhor lugar!
+                        {"\n\n"}
+                        Email: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('mailto:Eude@outlook.com')}>eude@outlook.com</Text>
+                        {"\n\n"}
+                        Tel: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('https://wa.me/5531973275789')}>31-973275789</Text>
+                        {"\n\n"}
+                        Instagran: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('https://www.instagram.com/eudebatista')}>@EudeBatista</Text>
+                    </InfoText>
+                    */}
                     {loading && <LoadingIcon size="large" color="#C2995B" />}
-                    
+
                     {nextAppointment ? (
                         <LastAppointment>
                             <AppointmentInfo>Próximo Atendimento Agendado:</AppointmentInfo>
@@ -108,12 +122,22 @@ export default () => {
                 </ListArea>
 
             </Scroller>
+            
             <InfoText style={{textAlign: 'center'}}>
                 {"\n\n"}
                 Rua Mineiro Joaquim Calixto, 162 - Bela Vista,
                 {"\n"}
                 Nova Lima - MG, 34004-223, Brazil 
             </InfoText>
+            {/*
+            <InfoText style={{ textAlign: 'center' }}>
+                {"\n\n"}
+                Rua Arão Reis, 89 - Jardim da Gloria,
+                {"\n"}
+                Vespasiano - MG, 33200-000, Brazil
+            </InfoText>
+            */}
+            
         </Container>
     );
 }

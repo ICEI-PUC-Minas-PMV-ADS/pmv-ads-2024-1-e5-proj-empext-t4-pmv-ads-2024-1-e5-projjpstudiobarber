@@ -68,6 +68,7 @@ export default () => {
 
                 </HeaderArea>
                 <Subtitle>*Clique em Ver Perfil e Agendar</Subtitle>
+
                 {/* Codigo abaixo destinado para filtrar a exibição exclusiva do JP}
                 {/* 
                 <ListArea>
@@ -82,18 +83,17 @@ export default () => {
                 */}
 
 
-                {/* Codigo abaixo destinado para exibir todos os Barbeiros que estiverem cadastrados}
+                {/* Codigo abaixo destinado para exibir todos os Barbeiros que estiverem cadastrados*/}
                 {/*
-
                 <ListArea>
                     {list.map((item, k) => (
                         <BarberItem key={k} data={item} />
                     ))}
                 </ListArea>
- 
                 */}
-                {/* Codigo abaixo destinado para filtrar a exibição do JP e sua esposa*/}
 
+                {/* Codigo abaixo destinado para filtrar a exibição do JP e sua esposa*/}
+               
                 <ListArea>
                     {list.length > 0 && list.slice(0, 2).map((item, index) => (
                         <BarberItem
@@ -103,7 +103,21 @@ export default () => {
                         />
                     ))}
                 </ListArea>
+                
+                
+                {/* Codigo abaixo destinado para exibir o barbeiro selecionado pela posição no Banco de dados*/}
+                 {/*
 
+                    <ListArea>
+                        {list.length > 3 && (
+                            <BarberItem
+                                key={list[4].id} // Usando list[3].id como chave única, assumindo que cada item tem um id único
+                                data={list[4]}
+                                onPress={() => handleBarberPress(list[4])} // Passa a função de navegação
+                            />
+                        )}
+                    </ListArea>
+                */}
             </Scroller>
         </Container>
     );
