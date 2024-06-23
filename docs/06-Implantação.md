@@ -1,6 +1,7 @@
 # Implantação do Software
-## Etapas do Processo de Desenvolvimento de Software
 ![alt text](img/Etapas-do-DS.png)
+
+## Etapas do Processo de Desenvolvimento de Software
 
 ### 1.	Requisitos do Cliente
 1.1 Identificação, análise das necessidades e o problema do cliente.
