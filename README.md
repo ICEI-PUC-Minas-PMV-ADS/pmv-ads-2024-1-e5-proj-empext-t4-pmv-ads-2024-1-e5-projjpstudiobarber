@@ -29,7 +29,7 @@ Abaixo, seguem as instruções para rodar o projeto localmente:
 ## 1. Fazer o download do arquivo do projeto (ZIP) da branch "dev"
 
 <figure>
-    <img src="docs/img/image1.png" alt="Tela de Login" width="900" height="600">
+    <img src="docs/img/image1.png" alt="Tela de Login" width="" height="">
 </figure>
 
 ## 2. Instalar o Visual Studio Code
@@ -50,7 +50,7 @@ ir em "Arquivo -\> Abrir Diretório", selecionando a pasta dentro do
 repositório: "\... 2024-1-e5-projjpstudiobarber\\app_v1.1\\app"
 
 <figure>
-    <img src="docs/img/image2.png" alt="Tela de Login" width="900" height="600">
+    <img src="docs/img/image2.png" alt="Tela de Login" width="" height="">
 </figure>
 
 ## 6. Abrir um novo terminal no VS Code (Terminal -\> Novo Terminal) e
@@ -64,7 +64,7 @@ repositório: "\... 2024-1-e5-projjpstudiobarber\\app_v1.1\\app"
 ## 7. Seguir as instruções do Metro conforme opção selecionada
 
 <figure>
-    <img src="docs/img/image3.png" alt="Tela de Login" width="900" height="600">
+    <img src="docs/img/image3.png" alt="Tela de Login" width="" height="">
 </figure>
 
 ## 8. PASSO A PASSO PARA GERAR O ARQUIVO APK DO ANDROID
@@ -150,7 +150,7 @@ Log in to EAS with email or username (exit and run eas login --help to see other
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="codigo-fonte/README.md"> Código Fonte</a></li>
 
 # Apresentação
 
