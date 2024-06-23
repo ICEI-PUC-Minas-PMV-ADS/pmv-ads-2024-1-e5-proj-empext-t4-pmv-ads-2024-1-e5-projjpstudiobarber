@@ -1,0 +1,25 @@
+# Diretórios e arquivos do Node.js
+node_modules/
+npm-debug.log
+
+# Diretórios e arquivos do git
+.git/
+.gitignore
+
+# Diretórios e arquivos do Expo
+.expo/
+.expo-shared/
+
+# Arquivos de log, configurações e markdowns
+*.log
+*.md
+.env
+.vscode/
+
+# Pastas com informações desnecessárias para realizar o build, referentes ao projeto
+atas/
+codigo-fonte/
+docs/
+presentation/
+proex/
+

@@ -1,0 +1,24 @@
+message: Please cite this software using these metadata.
+title: JP STUDIO BARBER
+authors:
+  - family-names: Xavier de Amorim
+    given-names: Armando
+  - family-names: de Souza Marcolino
+    given-names: Daniel 
+  - family-names: Costa de Cerqueira Bispo
+    given-names: Gabriel 
+  - family-names: Edésio Rosa
+    given-names: Maykon 
+  - family-names: Bastos Mendes
+    given-names: Roger    
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Oliveira Caetano
+    given-names: João Carlos 
+keywords:
+  - Barbearia
+  - Gestão
+  - Agendamento
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber
+version: 1.0.0
+date-released: 2024-06-19

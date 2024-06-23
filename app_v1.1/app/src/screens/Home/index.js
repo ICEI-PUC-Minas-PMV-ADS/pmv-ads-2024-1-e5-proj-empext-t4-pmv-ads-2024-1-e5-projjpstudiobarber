@@ -1,4 +1,4 @@
-import React, {  useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { RefreshControl, Text } from 'react-native';
 import Api from "../../Api";
 import {
@@ -55,9 +55,9 @@ export default () => {
             }>
                 <HeaderArea>
                     <HeaderTitle numberOfLines={2}>Realize o seu Agendamento.</HeaderTitle>
-                    
+
                     <SearchButton onPress={() => navigation.navigate('Search')}>
-                   
+
                         <SearchIcon
                             width="26"
                             height="26"
@@ -65,9 +65,12 @@ export default () => {
                             pointerEvents="none" // Impede eventos de clique no ícone
                         />
                     </SearchButton>
-                    
+
                 </HeaderArea>
                 <Subtitle>*Clique em Ver Perfil e Agendar</Subtitle>
+
+                {/* Codigo abaixo destinado para filtrar a exibição exclusiva do JP}
+                {/* 
                 <ListArea>
                     {list.length > 0 && (
                         <BarberItem
@@ -77,15 +80,44 @@ export default () => {
                         />
                     )}
                 </ListArea>
+                */}
 
- {/*               <ListArea>
+
+                {/* Codigo abaixo destinado para exibir todos os Barbeiros que estiverem cadastrados*/}
+                {/*
+                <ListArea>
                     {list.map((item, k) => (
                         <BarberItem key={k} data={item} />
                     ))}
                 </ListArea>
- */}
+                */}
+
+                {/* Codigo abaixo destinado para filtrar a exibição do JP e sua esposa*/}
+               
+                <ListArea>
+                    {list.length > 0 && list.slice(0, 2).map((item, index) => (
+                        <BarberItem
+                            key={index}
+                            data={item}
+                            onPress={() => handleBarberPress(item)} // Passa a função de navegação
+                        />
+                    ))}
+                </ListArea>
                 
                 
+                {/* Codigo abaixo destinado para exibir o barbeiro selecionado pela posição no Banco de dados*/}
+                 {/*
+
+                    <ListArea>
+                        {list.length > 3 && (
+                            <BarberItem
+                                key={list[4].id} // Usando list[3].id como chave única, assumindo que cada item tem um id único
+                                data={list[4]}
+                                onPress={() => handleBarberPress(list[4])} // Passa a função de navegação
+                            />
+                        )}
+                    </ListArea>
+                */}
             </Scroller>
         </Container>
     );

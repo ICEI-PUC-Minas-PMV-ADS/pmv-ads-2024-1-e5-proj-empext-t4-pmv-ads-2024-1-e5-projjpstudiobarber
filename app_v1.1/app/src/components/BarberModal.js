@@ -50,6 +50,7 @@ const UserName = styled.Text`
     font-size: 18px;
     font-weight: bold;    
 `;
+
 const ServiceInfo = styled.View`
     flex-direction: row;
     justify-content: space-between;
@@ -174,6 +175,7 @@ export default ({ show, setShow, user, service }) => {
     const [selectedHour, setSelectedHour] = useState(null);
     const [listDays, setListDays] = useState([]);
     const [listHours, setListHours] = useState([]);
+    const [today, setToday] = useState(new Date());
 
     useEffect(()=>{
         if(user.available) {
@@ -192,7 +194,7 @@ export default ({ show, setShow, user, service }) => {
                 let availability = user.available.filter(e=>e.date === selDate);
 
                 newListDays.push({
-                    status: availability.length > 0 ? true : false,
+                    status: availability.length > 0 && d >= today,
                     weekday: days[d.getDay()],
                     number: i
                 });
@@ -228,9 +230,10 @@ export default ({ show, setShow, user, service }) => {
 
     useEffect(()=>{
         let today = new Date();
+        setToday(today);
         setSelectedYear(today.getFullYear());
         setSelectedMonth(today.getMonth());
-        setSelectedDay(0);
+        setSelectedDay(today.getDate());
     }, []);
 
     const handleLeftDateClick = () => {

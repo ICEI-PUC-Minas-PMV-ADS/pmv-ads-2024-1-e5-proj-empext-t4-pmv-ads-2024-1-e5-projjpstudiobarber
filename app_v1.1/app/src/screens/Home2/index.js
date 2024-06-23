@@ -21,21 +21,24 @@ export default () => {
     const navigation = useNavigation();
     const [loading, setLoading] = useState(false);
     const [refreshing, setRefreshing] = useState(false);
-    const [lastAppointment, setLastAppointment] = useState(null);
+    const [nextAppointment, setNextAppointment] = useState(null);
 
-    const getLastAppointment = async () => {
+    const getNextAppointment = async () => {
         setLoading(true);
         let res = await Api.getAppointments();
-        // console.log("API response:", res);  // Adicione esta linha para debug
 
         if (res.error === '') {
             if (res.list && res.list.length > 0) {
-                // Obtendo o último agendamento (supondo que a lista esteja em ordem cronológica)
-                const lastApp = res.list[res.list.length - 1];
-                //console.log("Last appointment:", lastApp);  // Adicione esta linha para debug
-                setLastAppointment(lastApp);
+                const now = new Date();
+                const upcomingAppointments = res.list.filter(appointment => new Date(appointment.datetime) > now);
+                upcomingAppointments.sort((a, b) => new Date(a.datetime) - new Date(b.datetime));
+                if (upcomingAppointments.length > 0) {
+                    setNextAppointment(upcomingAppointments[0]);
+                } else {
+                    setNextAppointment(null);
+                }
             } else {
-                setLastAppointment(null);
+                setNextAppointment(null);
             }
         } else {
             alert("Erro: " + res.error);
@@ -44,17 +47,22 @@ export default () => {
     }
 
     useEffect(() => {
-        getLastAppointment();
+        getNextAppointment();
     }, []);
 
     const onRefresh = () => {
         setRefreshing(true);
-        getLastAppointment();
+        getNextAppointment();
         setRefreshing(false);
     }
 
     const handleSchedulePress = () => {
-        navigation.navigate('Appointments'); // Substitua 'Appointments' pelo nome correto da tela de agendamento
+        navigation.navigate('Appointments');
+    }
+
+    const formatDate = (datetime) => {
+        const date = new Date(datetime);
+        return date.toLocaleDateString('pt-BR'); // Formata a data para DD/MM/YYYY
     }
 
     return (
@@ -67,6 +75,7 @@ export default () => {
                 </HeaderArea>
 
                 <ListArea>
+
                     <InfoText>
                         JP Barber, desde 2020 entregando qualidade!
                         {"\n\n"}
@@ -79,17 +88,31 @@ export default () => {
                         Instagran: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('https://www.instagram.com/j0natas_nunes')}>@j0natas_nunes</Text>
                     </InfoText>
 
+                    {/*
+                    <InfoText>
+                        Salão do Eude, desde 2009 entregando qualidade!
+                        {"\n\n"}
+                        O homem moderno também cuida da sua aparência, e a nossa barbearia é o melhor lugar para fazer isso! Quem quer ser bem atendido e voltar para casa mais bonito sabe que aqui no Salão do Eude é o melhor lugar!
+                        {"\n\n"}
+                        Email: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('mailto:Eude@outlook.com')}>eude@outlook.com</Text>
+                        {"\n\n"}
+                        Tel: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('https://wa.me/5531973275789')}>31-973275789</Text>
+                        {"\n\n"}
+                        Instagran: <Text style={{ color: '#F6E9C3' }} onPress={() => Linking.openURL('https://www.instagram.com/eudebatista')}>@EudeBatista</Text>
+                    </InfoText>
+                    */}
                     {loading && <LoadingIcon size="large" color="#C2995B" />}
-                    
-                    {!loading && lastAppointment ? (
+
+                    {nextAppointment ? (
                         <LastAppointment>
-                            <AppointmentInfo>Último Agendamento:</AppointmentInfo>
-                            <AppointmentInfo>Data: {lastAppointment.date}</AppointmentInfo>
-                            <AppointmentInfo>Hora: {lastAppointment.hour}</AppointmentInfo>
-                            <AppointmentInfo>Barbeiro: {lastAppointment.barberName}</AppointmentInfo>
+                            <AppointmentInfo>Próximo Atendimento Agendado:</AppointmentInfo>
+                            <AppointmentInfo>Data: {formatDate(nextAppointment.datetime)}</AppointmentInfo>
+                            <AppointmentInfo>Hora: {nextAppointment.datetime.substring(11, 16)}</AppointmentInfo>
+                            <AppointmentInfo>Barbeiro: {nextAppointment.barber.name}</AppointmentInfo>
+                            <AppointmentInfo>Serviço: {nextAppointment.service.name}</AppointmentInfo>
                         </LastAppointment>
                     ) : (
-                        <NoAppointmentText>Nenhum agendamento realizado</NoAppointmentText>
+                        <NoAppointmentText>Nenhum agendamento próximo</NoAppointmentText>
                     )}
 
                     <ScheduleButton onPress={handleSchedulePress}>
@@ -99,11 +122,22 @@ export default () => {
                 </ListArea>
 
             </Scroller>
-            <InfoText>
+            
+            <InfoText style={{textAlign: 'center'}}>
                 {"\n\n"}
                 Rua Mineiro Joaquim Calixto, 162 - Bela Vista,
                 {"\n"}
-                Nova Lima - MG, 34004-223, Brazil </InfoText>
+                Nova Lima - MG, 34004-223, Brazil 
+            </InfoText>
+            {/*
+            <InfoText style={{ textAlign: 'center' }}>
+                {"\n\n"}
+                Rua Arão Reis, 89 - Jardim da Gloria,
+                {"\n"}
+                Vespasiano - MG, 33200-000, Brazil
+            </InfoText>
+            */}
+            
         </Container>
     );
 }
