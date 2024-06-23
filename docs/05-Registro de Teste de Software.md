@@ -44,6 +44,15 @@
 
 <video src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e5-proj-empext-t4-pmv-ads-2024-1-e5-projjpstudiobarber/assets/101514911/d76f1c50-91d6-49ce-abe3-be193a782658">  </video>
 
+#### **3 - Verificar se o Admin consegue alterar os preços dos serviços e valores corretamente**
+
+![alt text](img/Testes/alterapreco.png)
+    <figcaption>Figura 01 - Acesso web com opções de edição dos preços.</figcaption>
+
+
+![alt text](img/Testes/Print-Preco.png)
+    <figcaption>Figura 02 - Confirmação de preço alterado no aplicativo mobile.</figcaption>    
+
 
 ## API
 
@@ -51,15 +60,14 @@
 
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/01-cadastro.png" alt=""
-        width="900" height="600">
+        width="" height="">
     <figcaption>Figura 01 - Evidência novo usuário cadastrado.</figcaption>
 </figure>
 
 #### **1.2 - Verificar se o login é bloqueado ao digitar a senha ou e-mail errado**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/02-login-erro.png" alt=""
-        width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/02-login-erro.png">
     <figcaption>Figura 02 - Evidência bloqueio de acesso com dados errados</figcaption>
 </figure>
 
@@ -67,7 +75,7 @@
 
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/02-login-ok.png" alt=""
-        width="900" height="600">
+        width="" height="">
     <figcaption>Figura 02.1 - Evidência login autorizado com dados corretos.</figcaption>
 </figure>
 
@@ -75,7 +83,7 @@
 
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/03-refresh-token.png" alt=""
-        width="900" height="600">
+        width="" height="">
     <figcaption>Figura 03 - Evidência de atualização de token.</figcaption>
 </figure>
 
@@ -83,7 +91,7 @@
 
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/04-token-erro.png" alt=""
-        width="900" height="600">
+        width="" height="">
     <figcaption>Figura 04 - Evidência de logout com token expirado.</figcaption>
 </figure>
 
@@ -91,7 +99,7 @@
 
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/05-logout.png" alt=""
-        width="900" height="600">
+        width="" height="">
     <figcaption>Figura 05 - Evidência de logout.</figcaption>
 </figure>
 
@@ -99,63 +107,64 @@
 
 <figure>
     <img src="img/Testes/Registros de testes jun24/api/06-requsicao-user.png" alt=""
-        width="900" height="600">
+        width="" height="">
     <figcaption>Figura 06 - Evidência de dados do usuário.</figcaption>
 </figure>
 
 ##### **3. - Requisição de informações de favoritos do usuário**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/7-requsicao-user-favorites.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/7-requsicao-user-favorites.png" alt="" width="" height="">
     <figcaption>Figura 07 - Evidência de favoritos do usuário vazio.</figcaption>
 </figure>
 
 ##### **3.1 - Favoritar um barbeiro**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/7.2-requsicao-user-favorites.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/7.2-requsicao-user-favorites.png" alt="" width="" height="">
     <figcaption>Figura 07.1 - Evidência de favoritos do usuário.</figcaption>
 </figure>
 
 ##### **3.2 - Confirmação de barbeiro favoritado**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/7.2-requsicao-user-favorites.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/7.2-requsicao-user-favorites.png" alt="" width="" height="">
     <figcaption>Figura 07.2 - Evidência de favorito incluído do usuário.</figcaption>
 </figure>
 
 ##### **4 - Rota para agendamento de serviço com barbeiro**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="" height="">
     <figcaption>Figura 08. - Evidência de rota disponível.</figcaption>
 </figure>
 
 ##### **4.1 - Disponibilidade de datas para agendamento de serviço com barbeiro**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="" height="">
     <figcaption>Figura 08.1 - Evidência de agendamento não disponível de acordo com data/hora.</figcaption>
 </figure>
+
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/8.2-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/8.2-requsicao-user-appointments.png" alt="" width="" height="">
     <figcaption>Figura 08.2 - Evidência de agendamento não disponível de acordo com data/hora.</figcaption>
 </figure>
 
 ##### **4.3 - Confirmação de agendamento de serviço com barbeiro**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/8-requsicao-user-appointments.png" alt="" width="" height="">
     <figcaption>Figura 08.3 - Evidência de rota de agendamento.</figcaption>
 </figure>
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/8.4-requsicao-user-appointments.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/8.4-requsicao-user-appointments.png" alt="" width="" height="">
     <figcaption>Figura 08.3 - Evidência de agendamento.</figcaption>
 </figure>
 
 ##### **5 - Listagem de barbeiros**
 
 <figure>
-    <img src="img/Testes/Registros de testes jun24/api/9-requsicao-barbers.png" alt="" width="900" height="600">
+    <img src="img/Testes/Registros de testes jun24/api/9-requsicao-barbers.png" alt="" width="" height="">
     <figcaption>Figura 09 - Listagem dos barbeiros cadastrados.</figcaption>
 </figure>

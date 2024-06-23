@@ -4,19 +4,32 @@
 ## Etapas do Processo de Desenvolvimento de Software
 
 ### 1.	Requisitos do Cliente
+
 1.1 Identificação, análise das necessidades e o problema do cliente.
+
 1.2 Compilação de informações e definição das condições e referências para a execução do software.
+
 ### 2.	Especificações Técnicas
 2.1 Criação de histórias de usuário que descrevem as necessidades de negócio.
+
 2.2 Definição dos Requisitos Funcionais e Não-Funcionais.
+
 ### 3.	Processo
+
 3.1 Divisão dos requisitos em sprints de desenvolvimento.
+
 3.2 Início da codificação, criação da estrutura lógica do software.
+
 3.2 Desenvolvimento dividido em front-end (interface), back-end (lógica de negócios) e database (bando de dados)
+
 ### 4.	Teste
+
 4.1 Testes realizados em ambiente específico para verificar se o software cumpre os requisitos.
+
 4.2 Simulação de diversos cenários para evitar problemas na publicação.
+
 ### 5.	Review
+
 5.1 Apresentação feita pelo time de desenvolvimento para garantir a qualidade do produto.
 
 5.2 Análise para confirmar se o produto atende às necessidades do cliente.

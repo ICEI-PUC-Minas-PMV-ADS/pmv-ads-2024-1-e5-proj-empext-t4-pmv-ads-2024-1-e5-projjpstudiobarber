@@ -38,6 +38,12 @@
 - Passos: Após realizar acesso ao sistema, de forma local, navegar até a pagina do perfil, selecionar o serviço, a data e o horario desejados.
 - Critério: Exibição dos dados corretos selecionados para o agendamento.
 
+#### **3 - Verificar se o Admin consegue alterar os preços dos serviços e valores corretamente**
+
+- Objetivo: Garantir que o sistema retornará corretamente os valores dos seriços a data e o após salvar a alteração.
+- Passos: Após realizar acesso web em endereço com login e senha, navegar até a tabela do preço de preço a ser alterado, editar e salvar.
+- Critério: Exibição dos novos valores no aplicativo mobile.
+
 ## API
 
 #### **1.1 - Verificar se o email informado ao se cadastrar no sistema é existente**
