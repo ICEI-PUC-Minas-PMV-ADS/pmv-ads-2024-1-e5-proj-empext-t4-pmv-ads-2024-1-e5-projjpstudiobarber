@@ -71,8 +71,11 @@ Detalhamento das interações de usuário e lógica de negócio, como "ao clicar
 3. **Processo**:
    - Desenvolvimento de API com Laravel.
    - Configuração do banco de dados MySQL.
-   - Criação da interface e lógica de front-end com React Native.
+   - Criação da interface e lógica de front-end com React Native
+   - Toda programação será realizada utilizando o software Visual Studio Code
 4. **Teste**: Verificação integrada das funcionalidades API, banco de dados e interface do usuário.
 5. **Review**: Avaliação completa do sistema para garantir coesão e funcionamento conforme esperado.
 6. **Implementação/Publicação**: Implementação coordenada de API, banco de dados e aplicativo móvel em seus respectivos ambientes de produção.
+    - Para hospedagem do banco de dados será utilizado o serviço em nuvem do Microsoft Azure
+    - Para publicação da API será utilizada a plataforma de serviços digitais Digital Ocean
 
