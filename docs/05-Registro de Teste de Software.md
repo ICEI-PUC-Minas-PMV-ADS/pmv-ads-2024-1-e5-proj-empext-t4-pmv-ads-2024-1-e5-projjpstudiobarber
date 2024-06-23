@@ -46,12 +46,18 @@
 
 #### **3 - Verificar se o Admin consegue alterar os preços dos serviços e valores corretamente**
 
-![alt text](img/Testes/alterapreco.png)
+<figure>
+    <img src="img/Testes/alterapreco.png" alt=""
+        width="" height="">
     <figcaption>Figura 01 - Acesso web com opções de edição dos preços.</figcaption>
+</figure>
 
+<figure>
+    <img src="img/Testes/Print-Preco.png" alt=""
+        width="200" height="">
+    <figcaption>Figura 02 - Confirmação de preço alterado no aplicativo mobile.</figcaption>
+</figure>
 
-![alt text](img/Testes/Print-Preco.png)
-    <figcaption>Figura 02 - Confirmação de preço alterado no aplicativo mobile.</figcaption>    
 
 
 ## API
